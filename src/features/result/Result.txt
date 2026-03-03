@@ -1,0 +1,98 @@
+import { React, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import Answers from "../../components/Answers";
+import "../style/result.css";
+import QuizError from "../../components/QuizError";
+
+function Result() {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const {
+    finalScore,
+    finalAnswers,
+    finalQuestions,
+    userName,
+    finalTime,
+    QuizName,
+  } = location.state || {};
+  !location.state;
+  const [isVisibleResult, setIsVisibleResult] = useState(false);
+  const seconds = ("0" + Math.floor((finalTime / 1000) % 60)).slice(-2);
+  const totalTimeStr = `${seconds}sec`;
+  const [historyList] = useState(() => {
+    const saved = localStorage.getItem("Details");
+    let historyObj = {};
+    try {
+      const parsed = saved ? JSON.parse(saved) : {};
+      historyObj = parsed && typeof parsed === "object" ? parsed : {};
+    } catch {
+      historyObj = {};
+    }
+
+    const sessionKey = `saved_${userName}_${finalScore}_${finalTime}`;
+    if (sessionStorage.getItem(sessionKey)) {
+      return historyObj;
+    }
+
+    const now = new Date();
+    const formatter = new Intl.DateTimeFormat("en-US", {
+      weekday: "short",
+      year: "numeric",
+      month: "short",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
+      timeZone: "Asia/Karachi",
+    });
+    const newEntry = {
+      id: Date.now(),
+      userName,
+      score: `${finalScore}/${finalQuestions?.length || 0}`,
+      timeTaken: totalTimeStr,
+      date: formatter.format(now),
+      title: QuizName,
+      answers: finalAnswers,
+      question: finalQuestions,
+    };
+    const categoryHistory = historyObj[QuizName] || [];
+    const updatedFullHistory = {
+      ...historyObj,
+      [QuizName]: [newEntry, ...categoryHistory],
+    };
+    localStorage.setItem("Details", JSON.stringify(updatedFullHistory));
+    sessionStorage.setItem(sessionKey, "true");
+    return updatedFullHistory;
+  });
+  if (!location.state) {
+    return <QuizError />;
+  }
+  console.log(historyList);
+  return (
+    <div className="result-container">
+      <h1>Results for {userName}</h1>
+      <h3>{QuizName}</h3>
+      <div className="score-box">
+        <h2>
+          Your Score: {finalScore} / {finalQuestions?.length}
+        </h2>
+        <h3>Time Taken: {totalTimeStr}</h3>
+      </div>
+      <div className="button-group">
+        <button onClick={() => navigate("/")}>Restart App</button>
+        <button
+          onClick={() =>
+            navigate("/User/SelectQuiz", { state: { name: userName } })
+          }>
+          Select Quiz
+        </button>
+        <button onClick={() => setIsVisibleResult(!isVisibleResult)}>
+          {isVisibleResult ? "Hide Answers" : "Show Answers"}
+        </button>
+      </div>
+      <br />
+      {isVisibleResult && <Answers ans={finalAnswers} que={finalQuestions} />}
+    </div>
+  );
+}
+
+export default Result;

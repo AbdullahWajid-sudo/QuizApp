@@ -1,0 +1,30 @@
+(function() {
+  const key = "Details";
+  const category = "C++";
+  const targetUser = "ReTry";
+
+  // 1. Get the data from LocalStorage
+  const data = JSON.parse(localStorage.getItem(key));
+
+  if (data && data[category]) {
+    const originalCount = data[category].length;
+
+    // 2. Filter out the specific username
+    data[category] = data[category].filter(item => item.userName !== targetUser);
+
+    const newCount = data[category].length;
+
+    // 3. Update or remove category if empty
+    if (data[category].length === 0) {
+      delete data[category];
+    }
+
+    // 4. Save back to LocalStorage
+    localStorage.setItem(key, JSON.stringify(data));
+
+    console.log(`Success: Deleted ${originalCount - newCount} entry/entries for "${targetUser}" in "${category}".`);
+    console.log("Please refresh your page to see the changes.");
+  } else {
+    console.error(`Category "${category}" not found in LocalStorage.`);
+  }
+})();

@@ -1,0 +1,159 @@
+// import { React, useState } from "react";
+// import "../style/history.css";
+// import DatePicker from "react-datepicker";
+// import "react-datepicker/dist/react-datepicker.css";
+// import Answers from "../../components/Answers";
+// import DataTable from "../../common/DataTable";
+
+// function History() {
+//   const [history] = useState(() => {
+//     const saved = localStorage.getItem("Details");
+//     try {
+//       const parsed = JSON.parse(saved);
+//       return parsed && typeof parsed === "object" ? parsed : {};
+//     } catch {
+//       return {};
+//     }
+//   });
+
+//   const [searchName, setSearchName] = useState("");
+//   const [startDate, setStartDate] = useState(new Date(2026, 0, 1));
+//   const [endDate, setEndDate] = useState(new Date());
+//   const [selectedTitle, setSelectedTitle] = useState("All");
+//   const [selectedItem, setSelectedItem] = useState(null);
+//   const [isVisibleResult, setIsVisibleResult] = useState(true);
+//   const [sortOrderName, setSortOrderName] = useState("");
+
+//   const quizTitles = Object.keys(history);
+//   const allData =
+//     selectedTitle === "All"
+//       ? Object.values(history).flat()
+//       : history[selectedTitle] || [];
+
+//   const AnswerHandler = (item) => {
+//     setSelectedItem(item);
+//     setIsVisibleResult(!isVisibleResult);
+//   };
+//   const backHandler = () => {
+//     setSelectedItem(null);
+//     setIsVisibleResult(!isVisibleResult);
+//   };
+
+//   const filteredData = allData.filter((item) => {
+//     const matchesName = item.userName
+//       .toLowerCase()
+//       .includes(searchName.toLowerCase());
+//     const matchTime = new Date(item.date).getTime();
+//     const matchesDate =
+//       matchTime >= startDate.getTime() && matchTime <= endDate.getTime();
+//     return matchesName && matchesDate;
+//   });
+
+//   const baseData = [...filteredData].toSorted((a, b) => {
+//     if (sortOrderName === "asc") {
+//       return a.userName.toLowerCase().localeCompare(b.userName.toLowerCase());
+//     } else if (sortOrderName === "desc") {
+//       return b.userName.toLowerCase().localeCompare(a.userName.toLowerCase());
+//     } else {
+//       return b.id - a.id;
+//     }
+//   });
+//   const tableColumns = [
+//     { header: "#", render: (_, index) => index + 1 },
+//     {
+//       header: "User Name",
+//       key: "userName",
+//       headerExtra: (
+//         <select
+//           onChange={(e) => setSortOrderName(e.target.value)}
+//           value={sortOrderName}>
+//           <option value="none">Default</option>
+//           <option value="asc">Asc</option>
+//           <option value="desc">Desc</option>
+//         </select>
+//       ),
+//     },
+//     { header: "Score", key: "score" },
+//     { header: "Time Taken", key: "timeTaken" },
+//     { header: "Attempt Date", key: "date" },
+//     { header: "Title", key: "title" },
+//     {
+//       header: "Answers",
+//       render: (item) => (
+//         <button className="table-btn" onClick={() => AnswerHandler(item)}>
+//           Answer Table
+//         </button>
+//       ),
+//     },
+//   ];
+
+//   return (
+//     <>
+//       <div className="history-table">
+//         <h3>Previous Attempts</h3>
+//         {isVisibleResult && (
+//           <>
+//             <div className="filters">
+//               <input
+//                 className="search-filter-input"
+//                 type="text"
+//                 value={searchName}
+//                 onChange={(e) => setSearchName(e.target.value)}
+//                 placeholder="Search by name..."
+//               />
+//               <div className="quiz-filter-btn">
+//                 <button
+//                   onClick={() => setSelectedTitle("All")}
+//                   className={selectedTitle === "All" ? "active-btn" : ""}>
+//                   All Quiz
+//                 </button>
+//                 {quizTitles.map((title) => (
+//                   <button
+//                     key={title}
+//                     onClick={() => setSelectedTitle(title)}
+//                     className={selectedTitle === title ? "active-btn" : ""}>
+//                     {title}
+//                   </button>
+//                 ))}
+//               </div>
+//               <div className="date-filter-input">
+//                 <label>
+//                   From:
+//                   <DatePicker
+//                     className="search-filter-input"
+//                     selected={startDate}
+//                     onChange={(date) => setStartDate(date)}
+//                     dateFormat="EEE, MMM dd, yyyy hh:mm aa"
+//                     showTimeSelect
+//                   />
+//                 </label>
+//                 <label>
+//                   To:
+//                   <DatePicker
+//                     className="search-filter-input"
+//                     selected={endDate}
+//                     onChange={(date) => setEndDate(date)}
+//                     dateFormat="EEE, MMM dd, yyyy hh:mm aa"
+//                     showTimeSelect
+//                   />
+//                 </label>
+//               </div>
+//             </div>
+//             <br />
+
+//             <DataTable columns={tableColumns} data={baseData} />
+//           </>
+//         )}
+//         {selectedItem && (
+//           <>
+//             <button onClick={() => backHandler()}>Back</button>
+//             <h3>{selectedItem.userName}</h3>
+//             <Answers ans={selectedItem.answers} que={selectedItem.question} />
+//           </>
+//         )}
+//       </div>
+//     </>
+//   );
+// }
+
+// export default History;
