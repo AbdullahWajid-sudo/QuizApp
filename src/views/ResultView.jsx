@@ -103,11 +103,6 @@ function ResultView() {
             <div className="space-y-4">
               {state.finalQuestions.map((q, index) => {
                 const userAns = state.finalAnswers[index];
-
-                // console.log(`Q${index + 1}:`, {
-                //   userSelected: userAns,
-                //   actualData: q,
-                // });
                 const actualCorrect = q.correctAnswer || q.answer || q.correct;
 
                 const isCorrect =

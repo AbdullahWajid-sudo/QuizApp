@@ -10,10 +10,12 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "server": "json-server --watch db.json --port 5000"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.2.1",
+    "json-server": "^1.0.0-beta.12",
     "react": "^19.2.0",
     "react-datepicker": "^9.1.0",
     "react-dom": "^19.2.0",

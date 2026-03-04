@@ -1,0 +1,3219 @@
+{
+  "Details": {
+    "React": [
+      {
+        "id": 1772103181693,
+        "userName": "PlayerMF",
+        "score": "3/3",
+        "timeTaken": "09sec",
+        "date": "Thu, Feb 26, 2026, 03:53 PM",
+        "title": "React",
+        "answers": [
+          "useState",
+          "JavaScript XML",
+          "useEffect"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which hook is used for state management in React?",
+            "options": [
+              "useEffect",
+              "useState",
+              "useContext",
+              "useReducer"
+            ],
+            "answer": "useState"
+          },
+          {
+            "id": 2,
+            "question": "What does JSX stand for?",
+            "options": [
+              "JavaScript XML",
+              "Java Syntax Extension",
+              "JSON Xylophone",
+              "JavaScript Xerox"
+            ],
+            "answer": "JavaScript XML"
+          },
+          {
+            "id": 3,
+            "question": "Which hook is used to handle side effects in React?",
+            "options": [
+              "useState",
+              "useMemo",
+              "useEffect",
+              "useCallback"
+            ],
+            "answer": "useEffect"
+          }
+        ]
+      },
+      {
+        "id": 1772101519447,
+        "userName": "Master",
+        "score": "3/3",
+        "timeTaken": "18sec",
+        "date": "Thu, Feb 26, 2026, 03:25 PM",
+        "title": "React",
+        "answers": [
+          "useState",
+          "JavaScript XML",
+          "useEffect"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which hook is used for state management in React?",
+            "options": [
+              "useEffect",
+              "useState",
+              "useContext",
+              "useReducer"
+            ],
+            "answer": "useState"
+          },
+          {
+            "id": 2,
+            "question": "What does JSX stand for?",
+            "options": [
+              "JavaScript XML",
+              "Java Syntax Extension",
+              "JSON Xylophone",
+              "JavaScript Xerox"
+            ],
+            "answer": "JavaScript XML"
+          },
+          {
+            "id": 3,
+            "question": "Which hook is used to handle side effects in React?",
+            "options": [
+              "useState",
+              "useMemo",
+              "useEffect",
+              "useCallback"
+            ],
+            "answer": "useEffect"
+          }
+        ]
+      },
+      {
+        "id": 1772008324901,
+        "userName": "Tail",
+        "score": "2/3",
+        "timeTaken": "14sec",
+        "date": "Wed, Feb 25, 2026, 01:32 PM",
+        "title": "React",
+        "answers": [
+          "useState",
+          "JavaScript XML",
+          "useState"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which hook is used for state management in React?",
+            "options": [
+              "useEffect",
+              "useState",
+              "useContext",
+              "useReducer"
+            ],
+            "answer": "useState"
+          },
+          {
+            "id": 2,
+            "question": "What does JSX stand for?",
+            "options": [
+              "JavaScript XML",
+              "Java Syntax Extension",
+              "JSON Xylophone",
+              "JavaScript Xerox"
+            ],
+            "answer": "JavaScript XML"
+          },
+          {
+            "id": 3,
+            "question": "Which hook is used to handle side effects in React?",
+            "options": [
+              "useState",
+              "useMemo",
+              "useEffect",
+              "useCallback"
+            ],
+            "answer": "useEffect"
+          }
+        ]
+      },
+      {
+        "id": 1771930327039,
+        "userName": "hhj",
+        "score": "2/3",
+        "timeTaken": "10sec",
+        "date": "Tue, Feb 24, 2026, 03:52 PM",
+        "title": "React",
+        "answers": [
+          "useState",
+          "JavaScript XML",
+          "useState"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which hook is used for state management in React?",
+            "options": [
+              "useEffect",
+              "useState",
+              "useContext",
+              "useReducer"
+            ],
+            "answer": "useState"
+          },
+          {
+            "id": 2,
+            "question": "What does JSX stand for?",
+            "options": [
+              "JavaScript XML",
+              "Java Syntax Extension",
+              "JSON Xylophone",
+              "JavaScript Xerox"
+            ],
+            "answer": "JavaScript XML"
+          },
+          {
+            "id": 3,
+            "question": "Which hook is used to handle side effects in React?",
+            "options": [
+              "useState",
+              "useMemo",
+              "useEffect",
+              "useCallback"
+            ],
+            "answer": "useEffect"
+          }
+        ]
+      },
+      {
+        "id": 1771929655689,
+        "userName": "Next",
+        "score": "3/3",
+        "timeTaken": "12sec",
+        "date": "Tue, Feb 24, 2026, 03:40 PM",
+        "title": "React",
+        "answers": [
+          "useState",
+          "JavaScript XML",
+          "useEffect"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which hook is used for state management in React?",
+            "options": [
+              "useEffect",
+              "useState",
+              "useContext",
+              "useReducer"
+            ],
+            "answer": "useState"
+          },
+          {
+            "id": 2,
+            "question": "What does JSX stand for?",
+            "options": [
+              "JavaScript XML",
+              "Java Syntax Extension",
+              "JSON Xylophone",
+              "JavaScript Xerox"
+            ],
+            "answer": "JavaScript XML"
+          },
+          {
+            "id": 3,
+            "question": "Which hook is used to handle side effects in React?",
+            "options": [
+              "useState",
+              "useMemo",
+              "useEffect",
+              "useCallback"
+            ],
+            "answer": "useEffect"
+          }
+        ]
+      },
+      {
+        "id": 1771414003885,
+        "userName": "February",
+        "score": "3/3",
+        "timeTaken": "08sec",
+        "date": "Wed, Feb 18, 2026, 04:26 PM",
+        "title": "React",
+        "answers": [
+          "useState",
+          "JavaScript XML",
+          "useEffect"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which hook is used for state management in React?",
+            "options": [
+              "useEffect",
+              "useState",
+              "useContext",
+              "useReducer"
+            ],
+            "answer": "useState"
+          },
+          {
+            "id": 2,
+            "question": "What does JSX stand for?",
+            "options": [
+              "JavaScript XML",
+              "Java Syntax Extension",
+              "JSON Xylophone",
+              "JavaScript Xerox"
+            ],
+            "answer": "JavaScript XML"
+          },
+          {
+            "id": 3,
+            "question": "Which hook is used to handle side effects in React?",
+            "options": [
+              "useState",
+              "useMemo",
+              "useEffect",
+              "useCallback"
+            ],
+            "answer": "useEffect"
+          }
+        ]
+      },
+      {
+        "id": 1771230892504,
+        "userName": "VS Code",
+        "score": "3/3",
+        "timeTaken": "09sec",
+        "date": "Mon, Feb 16, 2026, 01:34 PM",
+        "title": "React",
+        "answers": [
+          "useState",
+          "JavaScript XML",
+          "useEffect"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which hook is used for state management in React?",
+            "options": [
+              "useEffect",
+              "useState",
+              "useContext",
+              "useReducer"
+            ],
+            "answer": "useState"
+          },
+          {
+            "id": 2,
+            "question": "What does JSX stand for?",
+            "options": [
+              "JavaScript XML",
+              "Java Syntax Extension",
+              "JSON Xylophone",
+              "JavaScript Xerox"
+            ],
+            "answer": "JavaScript XML"
+          },
+          {
+            "id": 3,
+            "question": "Which hook is used to handle side effects in React?",
+            "options": [
+              "useState",
+              "useMemo",
+              "useEffect",
+              "useCallback"
+            ],
+            "answer": "useEffect"
+          }
+        ]
+      },
+      {
+        "id": 1770994597114,
+        "userName": "Paul",
+        "score": "3/3",
+        "timeTaken": "05sec",
+        "date": "Fri, Feb 13, 2026, 07:56 PM",
+        "title": "React",
+        "answers": [
+          "useState",
+          "JavaScript XML",
+          "useEffect"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which hook is used for state management in React?",
+            "options": [
+              "useEffect",
+              "useState",
+              "useContext",
+              "useReducer"
+            ],
+            "answer": "useState"
+          },
+          {
+            "id": 2,
+            "question": "What does JSX stand for?",
+            "options": [
+              "JavaScript XML",
+              "Java Syntax Extension",
+              "JSON Xylophone",
+              "JavaScript Xerox"
+            ],
+            "answer": "JavaScript XML"
+          },
+          {
+            "id": 3,
+            "question": "Which hook is used to handle side effects in React?",
+            "options": [
+              "useState",
+              "useMemo",
+              "useEffect",
+              "useCallback"
+            ],
+            "answer": "useEffect"
+          }
+        ]
+      },
+      {
+        "id": 1770987077024,
+        "userName": "Friday",
+        "score": "2/3",
+        "timeTaken": "08sec",
+        "date": "Fri, Feb 13, 2026, 05:51 PM",
+        "title": "React",
+        "answers": [
+          "useState",
+          "JavaScript XML",
+          "useMemo"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which hook is used for state management in React?",
+            "options": [
+              "useEffect",
+              "useState",
+              "useContext",
+              "useReducer"
+            ],
+            "answer": "useState"
+          },
+          {
+            "id": 2,
+            "question": "What does JSX stand for?",
+            "options": [
+              "JavaScript XML",
+              "Java Syntax Extension",
+              "JSON Xylophone",
+              "JavaScript Xerox"
+            ],
+            "answer": "JavaScript XML"
+          },
+          {
+            "id": 3,
+            "question": "Which hook is used to handle side effects in React?",
+            "options": [
+              "useState",
+              "useMemo",
+              "useEffect",
+              "useCallback"
+            ],
+            "answer": "useEffect"
+          }
+        ]
+      },
+      {
+        "id": 1770902395952,
+        "userName": "Student06",
+        "score": "3/3",
+        "timeTaken": "05sec",
+        "date": "Thu, Feb 12, 2026, 06:19 PM",
+        "title": "React",
+        "answers": [
+          "useState",
+          "JavaScript XML",
+          "useEffect"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which hook is used for state management in React?",
+            "options": [
+              "useEffect",
+              "useState",
+              "useContext",
+              "useReducer"
+            ],
+            "answer": "useState"
+          },
+          {
+            "id": 2,
+            "question": "What does JSX stand for?",
+            "options": [
+              "JavaScript XML",
+              "Java Syntax Extension",
+              "JSON Xylophone",
+              "JavaScript Xerox"
+            ],
+            "answer": "JavaScript XML"
+          },
+          {
+            "id": 3,
+            "question": "Which hook is used to handle side effects in React?",
+            "options": [
+              "useState",
+              "useMemo",
+              "useEffect",
+              "useCallback"
+            ],
+            "answer": "useEffect"
+          }
+        ]
+      },
+      {
+        "id": 1770888569402,
+        "userName": "Latest",
+        "score": "3/3",
+        "timeTaken": "10sec",
+        "date": "Thu, Feb 12, 2026, 02:29 PM",
+        "title": "React",
+        "answers": [
+          "useState",
+          "JavaScript XML",
+          "useEffect"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which hook is used for state management in React?",
+            "options": [
+              "useEffect",
+              "useState",
+              "useContext",
+              "useReducer"
+            ],
+            "answer": "useState"
+          },
+          {
+            "id": 2,
+            "question": "What does JSX stand for?",
+            "options": [
+              "JavaScript XML",
+              "Java Syntax Extension",
+              "JSON Xylophone",
+              "JavaScript Xerox"
+            ],
+            "answer": "JavaScript XML"
+          },
+          {
+            "id": 3,
+            "question": "Which hook is used to handle side effects in React?",
+            "options": [
+              "useState",
+              "useMemo",
+              "useEffect",
+              "useCallback"
+            ],
+            "answer": "useEffect"
+          }
+        ]
+      },
+      {
+        "id": 1770817376156,
+        "userName": "Quiz",
+        "score": "3/3",
+        "timeTaken": "07sec",
+        "date": "Wed, Feb 11, 2026, 06:42 PM",
+        "title": "React",
+        "answers": [
+          "useState",
+          "JavaScript XML",
+          "useEffect"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which hook is used for state management in React?",
+            "options": [
+              "useEffect",
+              "useState",
+              "useContext",
+              "useReducer"
+            ],
+            "answer": "useState"
+          },
+          {
+            "id": 2,
+            "question": "What does JSX stand for?",
+            "options": [
+              "JavaScript XML",
+              "Java Syntax Extension",
+              "JSON Xylophone",
+              "JavaScript Xerox"
+            ],
+            "answer": "JavaScript XML"
+          },
+          {
+            "id": 3,
+            "question": "Which hook is used to handle side effects in React?",
+            "options": [
+              "useState",
+              "useMemo",
+              "useEffect",
+              "useCallback"
+            ],
+            "answer": "useEffect"
+          }
+        ]
+      },
+      {
+        "id": 1770815444904,
+        "userName": "History",
+        "score": "1/3",
+        "timeTaken": "13sec",
+        "date": "Wed, Feb 11, 2026, 06:10 PM",
+        "title": "React",
+        "answers": [
+          "useContext",
+          "Java Syntax Extension",
+          "useEffect"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which hook is used for state management in React?",
+            "options": [
+              "useEffect",
+              "useState",
+              "useContext",
+              "useReducer"
+            ],
+            "answer": "useState"
+          },
+          {
+            "id": 2,
+            "question": "What does JSX stand for?",
+            "options": [
+              "JavaScript XML",
+              "Java Syntax Extension",
+              "JSON Xylophone",
+              "JavaScript Xerox"
+            ],
+            "answer": "JavaScript XML"
+          },
+          {
+            "id": 3,
+            "question": "Which hook is used to handle side effects in React?",
+            "options": [
+              "useState",
+              "useMemo",
+              "useEffect",
+              "useCallback"
+            ],
+            "answer": "useEffect"
+          }
+        ]
+      },
+      {
+        "id": 1770807863130,
+        "userName": "Pink",
+        "score": "3/3",
+        "timeTaken": "03sec",
+        "date": "Wed, Feb 11, 2026, 04:04 PM",
+        "title": "React",
+        "answers": [
+          "useState",
+          "JavaScript XML",
+          "useEffect"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which hook is used for state management in React?",
+            "options": [
+              "useEffect",
+              "useState",
+              "useContext",
+              "useReducer"
+            ],
+            "answer": "useState"
+          },
+          {
+            "id": 2,
+            "question": "What does JSX stand for?",
+            "options": [
+              "JavaScript XML",
+              "Java Syntax Extension",
+              "JSON Xylophone",
+              "JavaScript Xerox"
+            ],
+            "answer": "JavaScript XML"
+          },
+          {
+            "id": 3,
+            "question": "Which hook is used to handle side effects in React?",
+            "options": [
+              "useState",
+              "useMemo",
+              "useEffect",
+              "useCallback"
+            ],
+            "answer": "useEffect"
+          }
+        ]
+      },
+      {
+        "id": 1770807708835,
+        "userName": "Pink",
+        "score": "2/3",
+        "timeTaken": "10sec",
+        "date": "Wed, Feb 11, 2026, 04:01 PM",
+        "title": "React",
+        "answers": [
+          "useState",
+          "JavaScript XML",
+          "useMemo"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which hook is used for state management in React?",
+            "options": [
+              "useEffect",
+              "useState",
+              "useContext",
+              "useReducer"
+            ],
+            "answer": "useState"
+          },
+          {
+            "id": 2,
+            "question": "What does JSX stand for?",
+            "options": [
+              "JavaScript XML",
+              "Java Syntax Extension",
+              "JSON Xylophone",
+              "JavaScript Xerox"
+            ],
+            "answer": "JavaScript XML"
+          },
+          {
+            "id": 3,
+            "question": "Which hook is used to handle side effects in React?",
+            "options": [
+              "useState",
+              "useMemo",
+              "useEffect",
+              "useCallback"
+            ],
+            "answer": "useEffect"
+          }
+        ]
+      },
+      {
+        "id": 1770807150086,
+        "userName": "Color",
+        "score": "0/3",
+        "timeTaken": "04sec",
+        "date": "Wed, Feb 11, 2026, 03:52 PM",
+        "title": "React",
+        "answers": [
+          "useContext",
+          "Java Syntax Extension",
+          "useState"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which hook is used for state management in React?",
+            "options": [
+              "useEffect",
+              "useState",
+              "useContext",
+              "useReducer"
+            ],
+            "answer": "useState"
+          },
+          {
+            "id": 2,
+            "question": "What does JSX stand for?",
+            "options": [
+              "JavaScript XML",
+              "Java Syntax Extension",
+              "JSON Xylophone",
+              "JavaScript Xerox"
+            ],
+            "answer": "JavaScript XML"
+          },
+          {
+            "id": 3,
+            "question": "Which hook is used to handle side effects in React?",
+            "options": [
+              "useState",
+              "useMemo",
+              "useEffect",
+              "useCallback"
+            ],
+            "answer": "useEffect"
+          }
+        ]
+      },
+      {
+        "id": 1770205739633,
+        "userName": "Student02",
+        "score": "3/3",
+        "timeTaken": "04sec",
+        "date": "Wed, Feb 04, 2026, 04:48 PM",
+        "title": "React",
+        "answers": [
+          "useState",
+          "JavaScript XML",
+          "useEffect"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which hook is used for state management in React?",
+            "options": [
+              "useEffect",
+              "useState",
+              "useContext",
+              "useReducer"
+            ],
+            "answer": "useState"
+          },
+          {
+            "id": 2,
+            "question": "What does JSX stand for?",
+            "options": [
+              "JavaScript XML",
+              "Java Syntax Extension",
+              "JSON Xylophone",
+              "JavaScript Xerox"
+            ],
+            "answer": "JavaScript XML"
+          },
+          {
+            "id": 3,
+            "question": "Which hook is used to handle side effects in React?",
+            "options": [
+              "useState",
+              "useMemo",
+              "useEffect",
+              "useCallback"
+            ],
+            "answer": "useEffect"
+          }
+        ]
+      },
+      {
+        "id": 1770195172612,
+        "userName": "abdullah",
+        "score": "3/3",
+        "timeTaken": "03sec",
+        "date": "Wed, Feb 04, 2026, 01:52 PM",
+        "title": "React",
+        "answers": [
+          "useState",
+          "JavaScript XML",
+          "useEffect"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which hook is used for state management in React?",
+            "options": [
+              "useEffect",
+              "useState",
+              "useContext",
+              "useReducer"
+            ],
+            "answer": "useState"
+          },
+          {
+            "id": 2,
+            "question": "What does JSX stand for?",
+            "options": [
+              "JavaScript XML",
+              "Java Syntax Extension",
+              "JSON Xylophone",
+              "JavaScript Xerox"
+            ],
+            "answer": "JavaScript XML"
+          },
+          {
+            "id": 3,
+            "question": "Which hook is used to handle side effects in React?",
+            "options": [
+              "useState",
+              "useMemo",
+              "useEffect",
+              "useCallback"
+            ],
+            "answer": "useEffect"
+          }
+        ]
+      },
+      {
+        "id": 1770125649616,
+        "userName": "Admin",
+        "score": "2/3",
+        "timeTaken": "05sec",
+        "date": "Tue, Feb 03, 2026, 06:34 PM",
+        "title": "React",
+        "answers": [
+          "useState",
+          "Java Syntax Extension",
+          "useEffect"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which hook is used for state management in React?",
+            "options": [
+              "useEffect",
+              "useState",
+              "useContext",
+              "useReducer"
+            ],
+            "answer": "useState"
+          },
+          {
+            "id": 2,
+            "question": "What does JSX stand for?",
+            "options": [
+              "JavaScript XML",
+              "Java Syntax Extension",
+              "JSON Xylophone",
+              "JavaScript Xerox"
+            ],
+            "answer": "JavaScript XML"
+          },
+          {
+            "id": 3,
+            "question": "Which hook is used to handle side effects in React?",
+            "options": [
+              "useState",
+              "useMemo",
+              "useEffect",
+              "useCallback"
+            ],
+            "answer": "useEffect"
+          }
+        ]
+      },
+      {
+        "id": 1770125503697,
+        "userName": "Abdullah",
+        "score": "3/3",
+        "timeTaken": "06sec",
+        "date": "Tue, Feb 03, 2026, 06:31 PM",
+        "title": "React",
+        "answers": [
+          "useState",
+          "JavaScript XML",
+          "useEffect"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which hook is used for state management in React?",
+            "options": [
+              "useEffect",
+              "useState",
+              "useContext",
+              "useReducer"
+            ],
+            "answer": "useState"
+          },
+          {
+            "id": 2,
+            "question": "What does JSX stand for?",
+            "options": [
+              "JavaScript XML",
+              "Java Syntax Extension",
+              "JSON Xylophone",
+              "JavaScript Xerox"
+            ],
+            "answer": "JavaScript XML"
+          },
+          {
+            "id": 3,
+            "question": "Which hook is used to handle side effects in React?",
+            "options": [
+              "useState",
+              "useMemo",
+              "useEffect",
+              "useCallback"
+            ],
+            "answer": "useEffect"
+          }
+        ]
+      },
+      {
+        "id": 1770125107309,
+        "userName": "abc",
+        "score": "1/3",
+        "timeTaken": "03sec",
+        "date": "Tue, Feb 03, 2026, 06:25 PM",
+        "title": "React",
+        "answers": [
+          "useContext",
+          "Java Syntax Extension",
+          "useEffect"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which hook is used for state management in React?",
+            "options": [
+              "useEffect",
+              "useState",
+              "useContext",
+              "useReducer"
+            ],
+            "answer": "useState"
+          },
+          {
+            "id": 2,
+            "question": "What does JSX stand for?",
+            "options": [
+              "JavaScript XML",
+              "Java Syntax Extension",
+              "JSON Xylophone",
+              "JavaScript Xerox"
+            ],
+            "answer": "JavaScript XML"
+          },
+          {
+            "id": 3,
+            "question": "Which hook is used to handle side effects in React?",
+            "options": [
+              "useState",
+              "useMemo",
+              "useEffect",
+              "useCallback"
+            ],
+            "answer": "useEffect"
+          }
+        ]
+      }
+    ],
+    "Python": [
+      {
+        "id": 1772191444301,
+        "userName": "ouch",
+        "score": "10/10",
+        "timeTaken": "36sec",
+        "date": "Fri, Feb 27, 2026, 04:24 PM",
+        "title": "Python",
+        "answers": [
+          "def",
+          "str",
+          "#",
+          "[1, 2, 3]",
+          "len()",
+          "for x in y:",
+          "append()",
+          "3",
+          "try...except",
+          "Numbers 0 to 4"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which keyword is used to define a function in Python?",
+            "options": [
+              "func",
+              "define",
+              "def",
+              "function"
+            ],
+            "answer": "def"
+          },
+          {
+            "id": 2,
+            "question": "Which data type is used to store text in Python?",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool"
+            ],
+            "answer": "str"
+          },
+          {
+            "id": 3,
+            "question": "Which symbol is used for comments in Python?",
+            "options": [
+              "//",
+              "#",
+              "/* */",
+              "--"
+            ],
+            "answer": "#"
+          },
+          {
+            "id": 4,
+            "question": "What is the correct way to create a list in Python?",
+            "options": [
+              "(1, 2, 3)",
+              "{1, 2, 3}",
+              "[1, 2, 3]",
+              "<1, 2, 3>"
+            ],
+            "answer": "[1, 2, 3]"
+          },
+          {
+            "id": 5,
+            "question": "Which function is used to get the number of items in a list?",
+            "options": [
+              "count()",
+              "length()",
+              "size()",
+              "len()"
+            ],
+            "answer": "len()"
+          },
+          {
+            "id": 6,
+            "question": "How do you start a 'for' loop in Python?",
+            "options": [
+              "for x in y:",
+              "for x to y:",
+              "for (x=0; x<y; x++)",
+              "each x in y:"
+            ],
+            "answer": "for x in y:"
+          },
+          {
+            "id": 7,
+            "question": "Which method is used to add an element to the end of a list?",
+            "options": [
+              "add()",
+              "append()",
+              "insert()",
+              "push()"
+            ],
+            "answer": "append()"
+          },
+          {
+            "id": 8,
+            "question": "What is the result of 10 // 3 in Python?",
+            "options": [
+              "3.333",
+              "3",
+              "4",
+              "1"
+            ],
+            "answer": "3"
+          },
+          {
+            "id": 9,
+            "question": "Which of these is used to handle exceptions in Python?",
+            "options": [
+              "try...except",
+              "throw...catch",
+              "if...else",
+              "error...handle"
+            ],
+            "answer": "try...except"
+          },
+          {
+            "id": 10,
+            "question": "What does the 'range(5)' function generate?",
+            "options": [
+              "Numbers 1 to 5",
+              "Numbers 0 to 5",
+              "Numbers 0 to 4",
+              "Numbers 1 to 4"
+            ],
+            "answer": "Numbers 0 to 4"
+          }
+        ]
+      },
+      {
+        "id": 1772103545652,
+        "userName": "Yourself",
+        "score": "1/3",
+        "timeTaken": "11sec",
+        "date": "Thu, Feb 26, 2026, 03:59 PM",
+        "title": "Python",
+        "answers": [
+          "function",
+          "str",
+          "//"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which keyword is used to define a function in Python?",
+            "options": [
+              "func",
+              "define",
+              "def",
+              "function"
+            ],
+            "answer": "def"
+          },
+          {
+            "id": 2,
+            "question": "Which data type is used to store text in Python?",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool"
+            ],
+            "answer": "str"
+          },
+          {
+            "id": 3,
+            "question": "Which symbol is used for comments in Python?",
+            "options": [
+              "//",
+              "#",
+              "/* */",
+              "--"
+            ],
+            "answer": "#"
+          }
+        ]
+      },
+      {
+        "id": 1772102953774,
+        "userName": "Global",
+        "score": "3/3",
+        "timeTaken": "12sec",
+        "date": "Thu, Feb 26, 2026, 03:49 PM",
+        "title": "Python",
+        "answers": [
+          "def",
+          "str",
+          "#"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which keyword is used to define a function in Python?",
+            "options": [
+              "func",
+              "define",
+              "def",
+              "function"
+            ],
+            "answer": "def"
+          },
+          {
+            "id": 2,
+            "question": "Which data type is used to store text in Python?",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool"
+            ],
+            "answer": "str"
+          },
+          {
+            "id": 3,
+            "question": "Which symbol is used for comments in Python?",
+            "options": [
+              "//",
+              "#",
+              "/* */",
+              "--"
+            ],
+            "answer": "#"
+          }
+        ]
+      },
+      {
+        "id": 1770990497583,
+        "userName": "yyy",
+        "score": "2/3",
+        "timeTaken": "32sec",
+        "date": "Fri, Feb 13, 2026, 06:48 PM",
+        "title": "Python",
+        "answers": [
+          "def",
+          "int",
+          "#"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which keyword is used to define a function in Python?",
+            "options": [
+              "func",
+              "define",
+              "def",
+              "function"
+            ],
+            "answer": "def"
+          },
+          {
+            "id": 2,
+            "question": "Which data type is used to store text in Python?",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool"
+            ],
+            "answer": "str"
+          },
+          {
+            "id": 3,
+            "question": "Which symbol is used for comments in Python?",
+            "options": [
+              "//",
+              "#",
+              "/* */",
+              "--"
+            ],
+            "answer": "#"
+          }
+        ]
+      },
+      {
+        "id": 1770987212106,
+        "userName": "Twenty",
+        "score": "3/3",
+        "timeTaken": "04sec",
+        "date": "Fri, Feb 13, 2026, 05:53 PM",
+        "title": "Python",
+        "answers": [
+          "def",
+          "str",
+          "#"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which keyword is used to define a function in Python?",
+            "options": [
+              "func",
+              "define",
+              "def",
+              "function"
+            ],
+            "answer": "def"
+          },
+          {
+            "id": 2,
+            "question": "Which data type is used to store text in Python?",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool"
+            ],
+            "answer": "str"
+          },
+          {
+            "id": 3,
+            "question": "Which symbol is used for comments in Python?",
+            "options": [
+              "//",
+              "#",
+              "/* */",
+              "--"
+            ],
+            "answer": "#"
+          }
+        ]
+      },
+      {
+        "id": 1770902291604,
+        "userName": "Student05",
+        "score": "2/3",
+        "timeTaken": "04sec",
+        "date": "Thu, Feb 12, 2026, 06:18 PM",
+        "title": "Python",
+        "answers": [
+          "def",
+          "int",
+          "#"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which keyword is used to define a function in Python?",
+            "options": [
+              "func",
+              "define",
+              "def",
+              "function"
+            ],
+            "answer": "def"
+          },
+          {
+            "id": 2,
+            "question": "Which data type is used to store text in Python?",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool"
+            ],
+            "answer": "str"
+          },
+          {
+            "id": 3,
+            "question": "Which symbol is used for comments in Python?",
+            "options": [
+              "//",
+              "#",
+              "/* */",
+              "--"
+            ],
+            "answer": "#"
+          }
+        ]
+      },
+      {
+        "id": 1770900417572,
+        "userName": "Final",
+        "score": "2/3",
+        "timeTaken": "09sec",
+        "date": "Thu, Feb 12, 2026, 05:46 PM",
+        "title": "Python",
+        "answers": [
+          "def",
+          "str",
+          "/* */"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which keyword is used to define a function in Python?",
+            "options": [
+              "func",
+              "define",
+              "def",
+              "function"
+            ],
+            "answer": "def"
+          },
+          {
+            "id": 2,
+            "question": "Which data type is used to store text in Python?",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool"
+            ],
+            "answer": "str"
+          },
+          {
+            "id": 3,
+            "question": "Which symbol is used for comments in Python?",
+            "options": [
+              "//",
+              "#",
+              "/* */",
+              "--"
+            ],
+            "answer": "#"
+          }
+        ]
+      },
+      {
+        "id": 1770890121222,
+        "userName": "Ten",
+        "score": "2/3",
+        "timeTaken": "05sec",
+        "date": "Thu, Feb 12, 2026, 02:55 PM",
+        "title": "Python",
+        "answers": [
+          "def",
+          "int",
+          "#"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which keyword is used to define a function in Python?",
+            "options": [
+              "func",
+              "define",
+              "def",
+              "function"
+            ],
+            "answer": "def"
+          },
+          {
+            "id": 2,
+            "question": "Which data type is used to store text in Python?",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool"
+            ],
+            "answer": "str"
+          },
+          {
+            "id": 3,
+            "question": "Which symbol is used for comments in Python?",
+            "options": [
+              "//",
+              "#",
+              "/* */",
+              "--"
+            ],
+            "answer": "#"
+          }
+        ]
+      },
+      {
+        "id": 1770888792770,
+        "userName": "Eleven",
+        "score": "2/3",
+        "timeTaken": "05sec",
+        "date": "Thu, Feb 12, 2026, 02:33 PM",
+        "title": "Python",
+        "answers": [
+          "def",
+          "str",
+          "//"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which keyword is used to define a function in Python?",
+            "options": [
+              "func",
+              "define",
+              "def",
+              "function"
+            ],
+            "answer": "def"
+          },
+          {
+            "id": 2,
+            "question": "Which data type is used to store text in Python?",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool"
+            ],
+            "answer": "str"
+          },
+          {
+            "id": 3,
+            "question": "Which symbol is used for comments in Python?",
+            "options": [
+              "//",
+              "#",
+              "/* */",
+              "--"
+            ],
+            "answer": "#"
+          }
+        ]
+      },
+      {
+        "id": 1770888658097,
+        "userName": "Five",
+        "score": "2/3",
+        "timeTaken": "07sec",
+        "date": "Thu, Feb 12, 2026, 02:30 PM",
+        "title": "Python",
+        "answers": [
+          "def",
+          "str",
+          "/* */"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which keyword is used to define a function in Python?",
+            "options": [
+              "func",
+              "define",
+              "def",
+              "function"
+            ],
+            "answer": "def"
+          },
+          {
+            "id": 2,
+            "question": "Which data type is used to store text in Python?",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool"
+            ],
+            "answer": "str"
+          },
+          {
+            "id": 3,
+            "question": "Which symbol is used for comments in Python?",
+            "options": [
+              "//",
+              "#",
+              "/* */",
+              "--"
+            ],
+            "answer": "#"
+          }
+        ]
+      },
+      {
+        "id": 1770641767772,
+        "userName": "Chrome",
+        "score": "3/3",
+        "timeTaken": "05sec",
+        "date": "Mon, Feb 09, 2026, 05:56 PM",
+        "title": "Python",
+        "answers": [
+          "def",
+          "str",
+          "#"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which keyword is used to define a function in Python?",
+            "options": [
+              "func",
+              "define",
+              "def",
+              "function"
+            ],
+            "answer": "def"
+          },
+          {
+            "id": 2,
+            "question": "Which data type is used to store text in Python?",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool"
+            ],
+            "answer": "str"
+          },
+          {
+            "id": 3,
+            "question": "Which symbol is used for comments in Python?",
+            "options": [
+              "//",
+              "#",
+              "/* */",
+              "--"
+            ],
+            "answer": "#"
+          }
+        ]
+      },
+      {
+        "id": 1770641601829,
+        "userName": "Dell",
+        "score": "3/3",
+        "timeTaken": "06sec",
+        "date": "Mon, Feb 09, 2026, 05:53 PM",
+        "title": "Python",
+        "answers": [
+          "def",
+          "str",
+          "#"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which keyword is used to define a function in Python?",
+            "options": [
+              "func",
+              "define",
+              "def",
+              "function"
+            ],
+            "answer": "def"
+          },
+          {
+            "id": 2,
+            "question": "Which data type is used to store text in Python?",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool"
+            ],
+            "answer": "str"
+          },
+          {
+            "id": 3,
+            "question": "Which symbol is used for comments in Python?",
+            "options": [
+              "//",
+              "#",
+              "/* */",
+              "--"
+            ],
+            "answer": "#"
+          }
+        ]
+      },
+      {
+        "id": 1770628995805,
+        "userName": "Google",
+        "score": "3/3",
+        "timeTaken": "12sec",
+        "date": "Mon, Feb 09, 2026, 02:23 PM",
+        "title": "Python",
+        "answers": [
+          "def",
+          "str",
+          "#"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which keyword is used to define a function in Python?",
+            "options": [
+              "func",
+              "define",
+              "def",
+              "function"
+            ],
+            "answer": "def"
+          },
+          {
+            "id": 2,
+            "question": "Which data type is used to store text in Python?",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool"
+            ],
+            "answer": "str"
+          },
+          {
+            "id": 3,
+            "question": "Which symbol is used for comments in Python?",
+            "options": [
+              "//",
+              "#",
+              "/* */",
+              "--"
+            ],
+            "answer": "#"
+          }
+        ]
+      },
+      {
+        "id": 1770628824130,
+        "userName": "router",
+        "score": "3/3",
+        "timeTaken": "09sec",
+        "date": "Mon, Feb 09, 2026, 02:20 PM",
+        "title": "Python",
+        "answers": [
+          "def",
+          "str",
+          "#"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which keyword is used to define a function in Python?",
+            "options": [
+              "func",
+              "define",
+              "def",
+              "function"
+            ],
+            "answer": "def"
+          },
+          {
+            "id": 2,
+            "question": "Which data type is used to store text in Python?",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool"
+            ],
+            "answer": "str"
+          },
+          {
+            "id": 3,
+            "question": "Which symbol is used for comments in Python?",
+            "options": [
+              "//",
+              "#",
+              "/* */",
+              "--"
+            ],
+            "answer": "#"
+          }
+        ]
+      },
+      {
+        "id": 1770207523283,
+        "userName": "jjg",
+        "score": "1/3",
+        "timeTaken": "13sec",
+        "date": "Wed, Feb 04, 2026, 05:18 PM",
+        "title": "Python",
+        "answers": [
+          "define",
+          "str",
+          "--"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which keyword is used to define a function in Python?",
+            "options": [
+              "func",
+              "define",
+              "def",
+              "function"
+            ],
+            "answer": "def"
+          },
+          {
+            "id": 2,
+            "question": "Which data type is used to store text in Python?",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool"
+            ],
+            "answer": "str"
+          },
+          {
+            "id": 3,
+            "question": "Which symbol is used for comments in Python?",
+            "options": [
+              "//",
+              "#",
+              "/* */",
+              "--"
+            ],
+            "answer": "#"
+          }
+        ]
+      },
+      {
+        "id": 1770200323808,
+        "userName": "Student01",
+        "score": "3/3",
+        "timeTaken": "05sec",
+        "date": "Wed, Feb 04, 2026, 03:18 PM",
+        "title": "Python",
+        "answers": [
+          "def",
+          "str",
+          "#"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which keyword is used to define a function in Python?",
+            "options": [
+              "func",
+              "define",
+              "def",
+              "function"
+            ],
+            "answer": "def"
+          },
+          {
+            "id": 2,
+            "question": "Which data type is used to store text in Python?",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool"
+            ],
+            "answer": "str"
+          },
+          {
+            "id": 3,
+            "question": "Which symbol is used for comments in Python?",
+            "options": [
+              "//",
+              "#",
+              "/* */",
+              "--"
+            ],
+            "answer": "#"
+          }
+        ]
+      },
+      {
+        "id": 1770125759784,
+        "userName": "Cat",
+        "score": "1/3",
+        "timeTaken": "04sec",
+        "date": "Tue, Feb 03, 2026, 06:35 PM",
+        "title": "Python",
+        "answers": [
+          "function",
+          "bool",
+          "#"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which keyword is used to define a function in Python?",
+            "options": [
+              "func",
+              "define",
+              "def",
+              "function"
+            ],
+            "answer": "def"
+          },
+          {
+            "id": 2,
+            "question": "Which data type is used to store text in Python?",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool"
+            ],
+            "answer": "str"
+          },
+          {
+            "id": 3,
+            "question": "Which symbol is used for comments in Python?",
+            "options": [
+              "//",
+              "#",
+              "/* */",
+              "--"
+            ],
+            "answer": "#"
+          }
+        ]
+      },
+      {
+        "id": 1770125733505,
+        "userName": "Hacker",
+        "score": "3/3",
+        "timeTaken": "05sec",
+        "date": "Tue, Feb 03, 2026, 06:35 PM",
+        "title": "Python",
+        "answers": [
+          "def",
+          "str",
+          "#"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which keyword is used to define a function in Python?",
+            "options": [
+              "func",
+              "define",
+              "def",
+              "function"
+            ],
+            "answer": "def"
+          },
+          {
+            "id": 2,
+            "question": "Which data type is used to store text in Python?",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool"
+            ],
+            "answer": "str"
+          },
+          {
+            "id": 3,
+            "question": "Which symbol is used for comments in Python?",
+            "options": [
+              "//",
+              "#",
+              "/* */",
+              "--"
+            ],
+            "answer": "#"
+          }
+        ]
+      },
+      {
+        "id": 1770125601172,
+        "userName": "jklmno",
+        "score": "0/3",
+        "timeTaken": "04sec",
+        "date": "Tue, Feb 03, 2026, 06:33 PM",
+        "title": "Python",
+        "answers": [
+          "function",
+          "float",
+          "/* */"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which keyword is used to define a function in Python?",
+            "options": [
+              "func",
+              "define",
+              "def",
+              "function"
+            ],
+            "answer": "def"
+          },
+          {
+            "id": 2,
+            "question": "Which data type is used to store text in Python?",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool"
+            ],
+            "answer": "str"
+          },
+          {
+            "id": 3,
+            "question": "Which symbol is used for comments in Python?",
+            "options": [
+              "//",
+              "#",
+              "/* */",
+              "--"
+            ],
+            "answer": "#"
+          }
+        ]
+      },
+      {
+        "id": 1770125559729,
+        "userName": "PY",
+        "score": "3/3",
+        "timeTaken": "04sec",
+        "date": "Tue, Feb 03, 2026, 06:32 PM",
+        "title": "Python",
+        "answers": [
+          "def",
+          "str",
+          "#"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which keyword is used to define a function in Python?",
+            "options": [
+              "func",
+              "define",
+              "def",
+              "function"
+            ],
+            "answer": "def"
+          },
+          {
+            "id": 2,
+            "question": "Which data type is used to store text in Python?",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool"
+            ],
+            "answer": "str"
+          },
+          {
+            "id": 3,
+            "question": "Which symbol is used for comments in Python?",
+            "options": [
+              "//",
+              "#",
+              "/* */",
+              "--"
+            ],
+            "answer": "#"
+          }
+        ]
+      }
+    ],
+    "C++": [
+      {
+        "id": 1772624882689,
+        "userName": "Incognito",
+        "score": "10/10",
+        "timeTaken": "27sec",
+        "date": "Wed, Mar 04, 2026, 04:48 PM",
+        "title": "C++",
+        "answers": [
+          "<<",
+          "char",
+          ";",
+          "class",
+          "0",
+          "<iostream>",
+          "const",
+          "&",
+          "true",
+          "main()"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which operator is used to insert data into 'cout' for output?",
+            "options": [
+              ">>",
+              "<<",
+              "||",
+              "&&"
+            ],
+            "answer": "<<"
+          },
+          {
+            "id": 2,
+            "question": "Which data type is used to store a single character?",
+            "options": [
+              "string",
+              "char",
+              "float",
+              "int"
+            ],
+            "answer": "char"
+          },
+          {
+            "id": 3,
+            "question": "What is the correct way to end a statement in C++?",
+            "options": [
+              ".",
+              ":",
+              ";",
+              "!"
+            ],
+            "answer": ";"
+          },
+          {
+            "id": 4,
+            "question": "Which keyword is used to create a class in C++?",
+            "options": [
+              "struct",
+              "object",
+              "class",
+              "prototype"
+            ],
+            "answer": "class"
+          },
+          {
+            "id": 5,
+            "question": "What is the index of the first element in a C++ array?",
+            "options": [
+              "-1",
+              "1",
+              "0",
+              "None"
+            ],
+            "answer": "0"
+          },
+          {
+            "id": 6,
+            "question": "Which header file is required for using input/output streams?",
+            "options": [
+              "<stdio.h>",
+              "<iostream>",
+              "<conio.h>",
+              "<math.h>"
+            ],
+            "answer": "<iostream>"
+          },
+          {
+            "id": 7,
+            "question": "How do you declare a constant variable in C++?",
+            "options": [
+              "const",
+              "final",
+              "fixed",
+              "static"
+            ],
+            "answer": "const"
+          },
+          {
+            "id": 8,
+            "question": "Which of these is the address-of operator?",
+            "options": [
+              "*",
+              "->",
+              "&",
+              "."
+            ],
+            "answer": "&"
+          },
+          {
+            "id": 9,
+            "question": "What is the result of 'boolean b = (5 > 3);' in C++?",
+            "options": [
+              "true",
+              "1",
+              "0",
+              "false"
+            ],
+            "answer": "true"
+          },
+          {
+            "id": 10,
+            "question": "Which function is the starting point of every C++ program?",
+            "options": [
+              "start()",
+              "init()",
+              "main()",
+              "begin()"
+            ],
+            "answer": "main()"
+          }
+        ]
+      },
+      {
+        "id": 1772102631651,
+        "userName": "Certified",
+        "score": "3/3",
+        "timeTaken": "09sec",
+        "date": "Thu, Feb 26, 2026, 03:43 PM",
+        "title": "C++",
+        "answers": [
+          "def",
+          "str",
+          "#"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which keyword is used to define a function in C++?",
+            "options": [
+              "func",
+              "define",
+              "def",
+              "function"
+            ],
+            "answer": "def"
+          },
+          {
+            "id": 2,
+            "question": "Which data type is used to store text in C++?",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool"
+            ],
+            "answer": "str"
+          },
+          {
+            "id": 3,
+            "question": "Which symbol is used for comments in C++?",
+            "options": [
+              "//",
+              "#",
+              "/* */",
+              "--"
+            ],
+            "answer": "#"
+          }
+        ]
+      },
+      {
+        "id": 1770987241782,
+        "userName": "Sunny",
+        "score": "2/3",
+        "timeTaken": "05sec",
+        "date": "Fri, Feb 13, 2026, 05:54 PM",
+        "title": "C++",
+        "answers": [
+          "def",
+          "float",
+          "#"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which keyword is used to define a function in C++?",
+            "options": [
+              "func",
+              "define",
+              "def",
+              "function"
+            ],
+            "answer": "def"
+          },
+          {
+            "id": 2,
+            "question": "Which data type is used to store text in C++?",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool"
+            ],
+            "answer": "str"
+          },
+          {
+            "id": 3,
+            "question": "Which symbol is used for comments in C++?",
+            "options": [
+              "//",
+              "#",
+              "/* */",
+              "--"
+            ],
+            "answer": "#"
+          }
+        ]
+      },
+      {
+        "id": 1770902423985,
+        "userName": "Student07",
+        "score": "3/3",
+        "timeTaken": "05sec",
+        "date": "Thu, Feb 12, 2026, 06:20 PM",
+        "title": "C++",
+        "answers": [
+          "def",
+          "str",
+          "#"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which keyword is used to define a function in C++?",
+            "options": [
+              "func",
+              "define",
+              "def",
+              "function"
+            ],
+            "answer": "def"
+          },
+          {
+            "id": 2,
+            "question": "Which data type is used to store text in C++?",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool"
+            ],
+            "answer": "str"
+          },
+          {
+            "id": 3,
+            "question": "Which symbol is used for comments in C++?",
+            "options": [
+              "//",
+              "#",
+              "/* */",
+              "--"
+            ],
+            "answer": "#"
+          }
+        ]
+      },
+      {
+        "id": 1770888766351,
+        "userName": "Seven",
+        "score": "3/3",
+        "timeTaken": "04sec",
+        "date": "Thu, Feb 12, 2026, 02:32 PM",
+        "title": "C++",
+        "answers": [
+          "def",
+          "str",
+          "#"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which keyword is used to define a function in C++?",
+            "options": [
+              "func",
+              "define",
+              "def",
+              "function"
+            ],
+            "answer": "def"
+          },
+          {
+            "id": 2,
+            "question": "Which data type is used to store text in C++?",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool"
+            ],
+            "answer": "str"
+          },
+          {
+            "id": 3,
+            "question": "Which symbol is used for comments in C++?",
+            "options": [
+              "//",
+              "#",
+              "/* */",
+              "--"
+            ],
+            "answer": "#"
+          }
+        ]
+      },
+      {
+        "id": 1770888701776,
+        "userName": "Six",
+        "score": "3/3",
+        "timeTaken": "05sec",
+        "date": "Thu, Feb 12, 2026, 02:31 PM",
+        "title": "C++",
+        "answers": [
+          "def",
+          "str",
+          "#"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which keyword is used to define a function in C++?",
+            "options": [
+              "func",
+              "define",
+              "def",
+              "function"
+            ],
+            "answer": "def"
+          },
+          {
+            "id": 2,
+            "question": "Which data type is used to store text in C++?",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool"
+            ],
+            "answer": "str"
+          },
+          {
+            "id": 3,
+            "question": "Which symbol is used for comments in C++?",
+            "options": [
+              "//",
+              "#",
+              "/* */",
+              "--"
+            ],
+            "answer": "#"
+          }
+        ]
+      },
+      {
+        "id": 1770819741127,
+        "userName": "Failed",
+        "score": "2/3",
+        "timeTaken": "03sec",
+        "date": "Wed, Feb 11, 2026, 07:22 PM",
+        "title": "C++",
+        "answers": [
+          "def",
+          "int",
+          "#"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which keyword is used to define a function in C++?",
+            "options": [
+              "func",
+              "define",
+              "def",
+              "function"
+            ],
+            "answer": "def"
+          },
+          {
+            "id": 2,
+            "question": "Which data type is used to store text in C++?",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool"
+            ],
+            "answer": "str"
+          },
+          {
+            "id": 3,
+            "question": "Which symbol is used for comments in C++?",
+            "options": [
+              "//",
+              "#",
+              "/* */",
+              "--"
+            ],
+            "answer": "#"
+          }
+        ]
+      },
+      {
+        "id": 1770808371275,
+        "userName": "Red",
+        "score": "2/3",
+        "timeTaken": "06sec",
+        "date": "Wed, Feb 11, 2026, 04:12 PM",
+        "title": "C++",
+        "answers": [
+          "def",
+          "int",
+          "#"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which keyword is used to define a function in C++?",
+            "options": [
+              "func",
+              "define",
+              "def",
+              "function"
+            ],
+            "answer": "def"
+          },
+          {
+            "id": 2,
+            "question": "Which data type is used to store text in C++?",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool"
+            ],
+            "answer": "str"
+          },
+          {
+            "id": 3,
+            "question": "Which symbol is used for comments in C++?",
+            "options": [
+              "//",
+              "#",
+              "/* */",
+              "--"
+            ],
+            "answer": "#"
+          }
+        ]
+      },
+      {
+        "id": 1770207289147,
+        "userName": "Student04",
+        "score": "2/3",
+        "timeTaken": "05sec",
+        "date": "Wed, Feb 04, 2026, 05:14 PM",
+        "title": "C++",
+        "answers": [
+          "def",
+          "int",
+          "#"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which keyword is used to define a function in C++?",
+            "options": [
+              "func",
+              "define",
+              "def",
+              "function"
+            ],
+            "answer": "def"
+          },
+          {
+            "id": 2,
+            "question": "Which data type is used to store text in C++?",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool"
+            ],
+            "answer": "str"
+          },
+          {
+            "id": 3,
+            "question": "Which symbol is used for comments in C++?",
+            "options": [
+              "//",
+              "#",
+              "/* */",
+              "--"
+            ],
+            "answer": "#"
+          }
+        ]
+      },
+      {
+        "id": 1770205779525,
+        "userName": "Student03",
+        "score": "2/3",
+        "timeTaken": "04sec",
+        "date": "Wed, Feb 04, 2026, 04:49 PM",
+        "title": "C++",
+        "answers": [
+          "def",
+          "int",
+          "#"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which keyword is used to define a function in C++?",
+            "options": [
+              "func",
+              "define",
+              "def",
+              "function"
+            ],
+            "answer": "def"
+          },
+          {
+            "id": 2,
+            "question": "Which data type is used to store text in C++?",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool"
+            ],
+            "answer": "str"
+          },
+          {
+            "id": 3,
+            "question": "Which symbol is used for comments in C++?",
+            "options": [
+              "//",
+              "#",
+              "/* */",
+              "--"
+            ],
+            "answer": "#"
+          }
+        ]
+      },
+      {
+        "id": 1770125777716,
+        "userName": "Abdullah",
+        "score": "3/3",
+        "timeTaken": "05sec",
+        "date": "Tue, Feb 03, 2026, 06:36 PM",
+        "title": "C++",
+        "answers": [
+          "def",
+          "str",
+          "#"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which keyword is used to define a function in C++?",
+            "options": [
+              "func",
+              "define",
+              "def",
+              "function"
+            ],
+            "answer": "def"
+          },
+          {
+            "id": 2,
+            "question": "Which data type is used to store text in C++?",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool"
+            ],
+            "answer": "str"
+          },
+          {
+            "id": 3,
+            "question": "Which symbol is used for comments in C++?",
+            "options": [
+              "//",
+              "#",
+              "/* */",
+              "--"
+            ],
+            "answer": "#"
+          }
+        ]
+      },
+      {
+        "id": 1770125703125,
+        "userName": "Abdullah",
+        "score": "3/3",
+        "timeTaken": "04sec",
+        "date": "Tue, Feb 03, 2026, 06:35 PM",
+        "title": "C++",
+        "answers": [
+          "def",
+          "str",
+          "#"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which keyword is used to define a function in C++?",
+            "options": [
+              "func",
+              "define",
+              "def",
+              "function"
+            ],
+            "answer": "def"
+          },
+          {
+            "id": 2,
+            "question": "Which data type is used to store text in C++?",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool"
+            ],
+            "answer": "str"
+          },
+          {
+            "id": 3,
+            "question": "Which symbol is used for comments in C++?",
+            "options": [
+              "//",
+              "#",
+              "/* */",
+              "--"
+            ],
+            "answer": "#"
+          }
+        ]
+      },
+      {
+        "id": 1770125667283,
+        "userName": "Developer",
+        "score": "2/3",
+        "timeTaken": "04sec",
+        "date": "Tue, Feb 03, 2026, 06:34 PM",
+        "title": "C++",
+        "answers": [
+          "def",
+          "float",
+          "#"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which keyword is used to define a function in C++?",
+            "options": [
+              "func",
+              "define",
+              "def",
+              "function"
+            ],
+            "answer": "def"
+          },
+          {
+            "id": 2,
+            "question": "Which data type is used to store text in C++?",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool"
+            ],
+            "answer": "str"
+          },
+          {
+            "id": 3,
+            "question": "Which symbol is used for comments in C++?",
+            "options": [
+              "//",
+              "#",
+              "/* */",
+              "--"
+            ],
+            "answer": "#"
+          }
+        ]
+      },
+      {
+        "id": 1770125574628,
+        "userName": "CPP",
+        "score": "2/3",
+        "timeTaken": "06sec",
+        "date": "Tue, Feb 03, 2026, 06:32 PM",
+        "title": "C++",
+        "answers": [
+          "def",
+          "int",
+          "#"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which keyword is used to define a function in C++?",
+            "options": [
+              "func",
+              "define",
+              "def",
+              "function"
+            ],
+            "answer": "def"
+          },
+          {
+            "id": 2,
+            "question": "Which data type is used to store text in C++?",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool"
+            ],
+            "answer": "str"
+          },
+          {
+            "id": 3,
+            "question": "Which symbol is used for comments in C++?",
+            "options": [
+              "//",
+              "#",
+              "/* */",
+              "--"
+            ],
+            "answer": "#"
+          }
+        ]
+      }
+    ],
+    "JavaScript": [
+      {
+        "id": 1772435876430,
+        "userName": "Reserved",
+        "score": "10/10",
+        "timeTaken": "34sec",
+        "date": "Mon, Mar 02, 2026, 12:17 PM",
+        "title": "JavaScript",
+        "answers": [
+          "Both let and var",
+          "() => {}",
+          "push()",
+          "number",
+          "===",
+          "parseInt()",
+          "if (i == 5)",
+          "To create a new array by transforming every element",
+          "Float",
+          "window"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which keyword is used to declare a variable that can be reassigned?",
+            "options": [
+              "const",
+              "let",
+              "var",
+              "Both let and var"
+            ],
+            "answer": "Both let and var"
+          },
+          {
+            "id": 2,
+            "question": "What is the correct way to write an arrow function?",
+            "options": [
+              "function => {}",
+              "() => {}",
+              "-> {}",
+              "() -> {}"
+            ],
+            "answer": "() => {}"
+          },
+          {
+            "id": 3,
+            "question": "Which method is used to add an element to the end of an array?",
+            "options": [
+              "shift()",
+              "pop()",
+              "push()",
+              "unshift()"
+            ],
+            "answer": "push()"
+          },
+          {
+            "id": 4,
+            "question": "What will 'typeof NaN' return?",
+            "options": [
+              "number",
+              "NaN",
+              "undefined",
+              "object"
+            ],
+            "answer": "number"
+          },
+          {
+            "id": 5,
+            "question": "Which operator is used for strict equality (checking both value and type)?",
+            "options": [
+              "=",
+              "==",
+              "===",
+              "!=="
+            ],
+            "answer": "==="
+          },
+          {
+            "id": 6,
+            "question": "Which function is used to parse a string into an integer?",
+            "options": [
+              "Integer.parse()",
+              "toInt()",
+              "parseInt()",
+              "parseNumber()"
+            ],
+            "answer": "parseInt()"
+          },
+          {
+            "id": 7,
+            "question": "How do you write an IF statement in JavaScript?",
+            "options": [
+              "if i = 5 then",
+              "if (i == 5)",
+              "if i == 5",
+              "if i = 5"
+            ],
+            "answer": "if (i == 5)"
+          },
+          {
+            "id": 8,
+            "question": "What is the purpose of the 'map()' array method?",
+            "options": [
+              "To filter out specific elements",
+              "To find a single element",
+              "To create a new array by transforming every element",
+              "To sort the existing array"
+            ],
+            "answer": "To create a new array by transforming every element"
+          },
+          {
+            "id": 9,
+            "question": "Which of the following is NOT a JavaScript data type?",
+            "options": [
+              "Undefined",
+              "Boolean",
+              "Float",
+              "Symbol"
+            ],
+            "answer": "Float"
+          },
+          {
+            "id": 10,
+            "question": "What is the global object in a web browser environment?",
+            "options": [
+              "document",
+              "window",
+              "body",
+              "navigator"
+            ],
+            "answer": "window"
+          }
+        ]
+      },
+      {
+        "id": 1772177228332,
+        "userName": "Ctrl",
+        "score": "6/10",
+        "timeTaken": "04sec",
+        "date": "Fri, Feb 27, 2026, 12:27 PM",
+        "title": "JavaScript",
+        "answers": [
+          "var",
+          "() => {}",
+          "push()",
+          "undefined",
+          "===",
+          "parseInt()",
+          "if i == 5",
+          "To create a new array by transforming every element",
+          "Float",
+          "document"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which keyword is used to declare a variable that can be reassigned?",
+            "options": [
+              "const",
+              "let",
+              "var",
+              "Both let and var"
+            ],
+            "answer": "Both let and var"
+          },
+          {
+            "id": 2,
+            "question": "What is the correct way to write an arrow function?",
+            "options": [
+              "function => {}",
+              "() => {}",
+              "-> {}",
+              "() -> {}"
+            ],
+            "answer": "() => {}"
+          },
+          {
+            "id": 3,
+            "question": "Which method is used to add an element to the end of an array?",
+            "options": [
+              "shift()",
+              "pop()",
+              "push()",
+              "unshift()"
+            ],
+            "answer": "push()"
+          },
+          {
+            "id": 4,
+            "question": "What will 'typeof NaN' return?",
+            "options": [
+              "number",
+              "NaN",
+              "undefined",
+              "object"
+            ],
+            "answer": "number"
+          },
+          {
+            "id": 5,
+            "question": "Which operator is used for strict equality (checking both value and type)?",
+            "options": [
+              "=",
+              "==",
+              "===",
+              "!=="
+            ],
+            "answer": "==="
+          },
+          {
+            "id": 6,
+            "question": "Which function is used to parse a string into an integer?",
+            "options": [
+              "Integer.parse()",
+              "toInt()",
+              "parseInt()",
+              "parseNumber()"
+            ],
+            "answer": "parseInt()"
+          },
+          {
+            "id": 7,
+            "question": "How do you write an IF statement in JavaScript?",
+            "options": [
+              "if i = 5 then",
+              "if (i == 5)",
+              "if i == 5",
+              "if i = 5"
+            ],
+            "answer": "if (i == 5)"
+          },
+          {
+            "id": 8,
+            "question": "What is the purpose of the 'map()' array method?",
+            "options": [
+              "To filter out specific elements",
+              "To find a single element",
+              "To create a new array by transforming every element",
+              "To sort the existing array"
+            ],
+            "answer": "To create a new array by transforming every element"
+          },
+          {
+            "id": 9,
+            "question": "Which of the following is NOT a JavaScript data type?",
+            "options": [
+              "Undefined",
+              "Boolean",
+              "Float",
+              "Symbol"
+            ],
+            "answer": "Float"
+          },
+          {
+            "id": 10,
+            "question": "What is the global object in a web browser environment?",
+            "options": [
+              "document",
+              "window",
+              "body",
+              "navigator"
+            ],
+            "answer": "window"
+          }
+        ]
+      }
+    ],
+    "HTML/CSS": [
+      {
+        "id": 1772177637440,
+        "userName": "learner",
+        "score": "8/10",
+        "timeTaken": "59sec",
+        "date": "Fri, Feb 27, 2026, 12:33 PM",
+        "title": "HTML/CSS",
+        "answers": [
+          "<link>",
+          "Hyper Text Markup Language",
+          "style",
+          "<h1>",
+          "<footer>",
+          "Cascading Style Sheets",
+          "background-color",
+          "Outline",
+          "margin-left",
+          "font-size"
+        ],
+        "question": [
+          {
+            "id": 1,
+            "question": "Which HTML tag is used to define an internal style sheet?",
+            "options": [
+              "<script>",
+              "<css>",
+              "<style>",
+              "<link>"
+            ],
+            "answer": "<style>"
+          },
+          {
+            "id": 2,
+            "question": "What does HTML stand for?",
+            "options": [
+              "Hyper Text Markup Language",
+              "Home Tool Markup Language",
+              "Hyperlinks and Text Markup Language",
+              "Hyper Tool Machine Language"
+            ],
+            "answer": "Hyper Text Markup Language"
+          },
+          {
+            "id": 3,
+            "question": "Which HTML attribute is used to define inline styles?",
+            "options": [
+              "class",
+              "styles",
+              "font",
+              "style"
+            ],
+            "answer": "style"
+          },
+          {
+            "id": 4,
+            "question": "Which is the correct HTML element for the largest heading?",
+            "options": [
+              "<heading>",
+              "<h6>",
+              "<h1>",
+              "<head>"
+            ],
+            "answer": "<h1>"
+          },
+          {
+            "id": 5,
+            "question": "Which HTML element is used to specify a footer for a document or section?",
+            "options": [
+              "<bottom>",
+              "<section>",
+              "<footer>",
+              "<aside>"
+            ],
+            "answer": "<footer>"
+          },
+          {
+            "id": 6,
+            "question": "What does CSS stand for?",
+            "options": [
+              "Computer Style Sheets",
+              "Cascading Style Sheets",
+              "Creative Style Sheets",
+              "Colorful Style Sheets"
+            ],
+            "answer": "Cascading Style Sheets"
+          },
+          {
+            "id": 7,
+            "question": "Which CSS property is used to change the background color?",
+            "options": [
+              "color",
+              "bgcolor",
+              "background-color",
+              "canvas-color"
+            ],
+            "answer": "background-color"
+          },
+          {
+            "id": 8,
+            "question": "In the CSS Box Model, which layer is between the padding and the margin?",
+            "options": [
+              "Content",
+              "Border",
+              "Outline",
+              "Space"
+            ],
+            "answer": "Border"
+          },
+          {
+            "id": 9,
+            "question": "Which property is used to change the left margin of an element?",
+            "options": [
+              "padding-left",
+              "indent",
+              "margin-left",
+              "spacing-left"
+            ],
+            "answer": "margin-left"
+          },
+          {
+            "id": 10,
+            "question": "Which CSS property controls the text size?",
+            "options": [
+              "font-style",
+              "text-size",
+              "font-size",
+              "text-style"
+            ],
+            "answer": "font-size"
+          }
+        ]
+      }
+    ]
+  },
+  "$schema": "./node_modules/json-server/schema.json"
+}

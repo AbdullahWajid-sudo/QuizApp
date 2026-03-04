@@ -1,8 +1,10 @@
-import { React, useState } from "react";
-import { HistoryModel } from "../models/HistoryModel";
+import { React, useState, useEffect } from "react";
+import { getHistoryData } from "../models/HistoryModel";
+// import { HistoryModel } from "../models/HistoryModel";
 
 export function useHistoryViewModel() {
-  const [history] = useState(() => HistoryModel());
+  // const [history] = useState(() => HistoryModel());
+  const [history, setHistory] = useState({});
   const [searchName, setSearchName] = useState("");
   const [startDate, setStartDate] = useState(new Date(2026, 0, 1));
   const [endDate, setEndDate] = useState(new Date());
@@ -11,7 +13,15 @@ export function useHistoryViewModel() {
   const [isVisibleResult, setIsVisibleResult] = useState(true);
   const [sortOrderUserName, setSortOrderUserName] = useState("");
   const [sortOrderScore, setSortOrderScore] = useState();
-  
+
+  useEffect(() => {
+    const loadData = async () => {
+      const data = await getHistoryData();
+      setHistory(data);
+    };
+    loadData();
+  }, []);
+
   const quizTitles = Object.keys(history);
   const allData =
     selectedTitle === "All"
@@ -38,7 +48,7 @@ export function useHistoryViewModel() {
       matchTime >= startDate.getTime() && matchTime <= endDate.getTime();
     return matchesName && matchesDate;
   });
-  
+
   return {
     state: {
       searchName,
