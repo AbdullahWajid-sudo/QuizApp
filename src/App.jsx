@@ -8,7 +8,7 @@ import Navbar from "./common/Navbar";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/QuizApp">
         <Navbar />
         <Routes>
           <Route path="/*" element={<Home />} />
