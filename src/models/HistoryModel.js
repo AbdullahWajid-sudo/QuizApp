@@ -1,20 +1,4 @@
-// import React from "react";
-
-// export function HistoryModel() {
-//   const saved = localStorage.getItem("Details");
-//   try {
-//     const parsed = JSON.parse(saved);
-//     if (parsed["undefined"]) delete parsed["undefined"];
-//     return parsed && typeof parsed === "object" ? parsed : {};
-//   } catch {
-//     return {};
-//   }
-// }
-
-// export default HistoryModel;
-
-// historyModel.js
-
+import React from "react";
 const BASE_URL = "http://localhost:5000/Details";
 
 export async function getHistoryData() {
@@ -24,7 +8,6 @@ export async function getHistoryData() {
 
     const parsed = await response.json();
 
-    // Clean up "undefined" key if it exists
     if (parsed && parsed["undefined"]) {
       delete parsed["undefined"];
     }

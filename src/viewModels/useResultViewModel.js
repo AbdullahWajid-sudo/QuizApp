@@ -7,25 +7,6 @@ export function useResultViewModel() {
   const navigate = useNavigate();
   const [isVisibleResult, setIsVisibleResult] = useState(true);
   const resultData = location.state;
-  // const QuizComponent = ({ quizData, userName }) => {
-  //   const handleQuizFinish = async (finalResults) => {
-  //     // 1. Format the data using your existing model logic
-  //     const entry = formatResultEntry({
-  //       userName: userName,
-  //       finalScore: finalResults.score,
-  //       finalQuestions: quizData.questions,
-  //       finalTime: finalResults.timeUsed,
-  //       QuizName: quizData.title,
-  //       finalAnswers: finalResults.userAnswers,
-  //     });
-  //     const success = await saveHistory(quizData.title, entry);
-  //     if (success) {
-  //       console.log("Result saved to db.json!");
-  //       // Navigate to results page or show success message
-  //     }
-  //   };
-  // };
-
   const seconds = ("0" + Math.floor((resultData.finalTime / 1000) % 60)).slice(
     -2,
   );

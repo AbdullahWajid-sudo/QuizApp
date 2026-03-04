@@ -1,9 +1,7 @@
 import { React, useState, useEffect } from "react";
 import { getHistoryData } from "../models/HistoryModel";
-// import { HistoryModel } from "../models/HistoryModel";
 
 export function useHistoryViewModel() {
-  // const [history] = useState(() => HistoryModel());
   const [history, setHistory] = useState({});
   const [searchName, setSearchName] = useState("");
   const [startDate, setStartDate] = useState(new Date(2026, 0, 1));
