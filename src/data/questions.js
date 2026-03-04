@@ -3,7 +3,7 @@ export const quizData = [
     topic: "React",
     id: "react-01",
     description: "Test your knowledge of Hooks and Components",
-    image: "../../public/assets/images/React.png",
+    image: `${import.meta.env.BASE_URL}assets/images/React.png`,
     questions: [
       {
         id: 1,
@@ -107,7 +107,7 @@ export const quizData = [
     topic: "Python",
     id: "python-01",
     description: "Test your knowledge of Python Language",
-    image: "../../public/assets/images/Python.png",
+    image: `${import.meta.env.BASE_URL}assets/images/Python.png`,
     questions: [
       {
         id: 1,
@@ -193,7 +193,7 @@ export const quizData = [
     topic: "C++",
     id: "C++-01",
     description: "Test your knowledge of C++ Language",
-    image: "../../public/assets/images/C++ (CPlusPlus).png",
+    image: `${import.meta.env.BASE_URL}assets/images/C++ (CPlusPlus).png`,
     questions: [
       {
         id: 1,
@@ -263,7 +263,7 @@ export const quizData = [
     topic: "HTML/CSS",
     id: "HTML&CSS-01",
     description: "Test your knowledge of HTML and CSS",
-    image: "../../public/assets/images/HTMLCSS.png",
+    image: `${import.meta.env.BASE_URL}assets/images/HTMLCSS.png`,
     questions: [
       {
         id: 1,
@@ -344,7 +344,7 @@ export const quizData = [
     topic: "JavaScript",
     id: "Javascript-01",
     description: "Test your knowledge of JavaScript",
-    image: "../../public/assets/images/JavaScript.png",
+    image: `${import.meta.env.BASE_URL}assets/images/JavaScript.png`,
     questions: [
       {
         id: 1,
