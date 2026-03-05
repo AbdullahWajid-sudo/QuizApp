@@ -1,8 +1,8 @@
-const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+const isLocal =
+  window.location.hostname === "localhost" ||
+  window.location.hostname === "127.0.0.1";
 
-const API_URL = isLocal 
-  ? "http://localhost:5000/Details" 
-  : "https://abdullahwajid-sudo.github.io/QuizApp/db.json";
+const API_URL = isLocal ? "http://localhost:5000/Details" : "/QuizApp/db.json";
 export const saveHistory = async (quizName, entry) => {
   if (!quizName || quizName === "undefined") return null;
 
