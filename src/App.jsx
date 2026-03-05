@@ -11,8 +11,8 @@ function App() {
       <BrowserRouter basename="/QuizApp">
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="History" element={<HistoryView props />} />
+          <Route path="/*" element={<Home />} />
+          <Route path="/History" element={<HistoryView props />} />
           <Route path="/QuizError" element={<QuizError />} />
         </Routes>
       </BrowserRouter>
