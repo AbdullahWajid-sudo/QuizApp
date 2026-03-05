@@ -1,5 +1,12 @@
 import React from "react";
-const BASE_URL = "http://localhost:5000/Details";
+const isLocal =
+  window.location.hostname === "localhost" ||
+  window.location.hostname === "127.0.0.1";
+
+// Set the URL based on the environment
+const BASE_URL = isLocal
+  ? "http://localhost:5000/Details"
+  : "https://abdullahwajid-sudo.github.io/QuizApp/db.json";
 
 export async function getHistoryData() {
   try {
