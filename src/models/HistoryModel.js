@@ -2,7 +2,9 @@ const isLocal =
   window.location.hostname === "localhost" ||
   window.location.hostname === "127.0.0.1";
 
-const BASE_URL = isLocal ? "http://localhost:5000/Details" : "/QuizApp/db.json";
+const BASE_URL = isLocal
+  ? "http://localhost:5000/Details"
+  : `${import.meta.env.BASE_URL}db.json`;
 
 export async function getHistoryData() {
   try {
