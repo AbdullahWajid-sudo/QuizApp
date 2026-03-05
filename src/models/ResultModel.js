@@ -4,7 +4,7 @@ const isLocal =
 
 const API_URL = isLocal
   ? "http://localhost:5000/Details"
-  : `${import.meta.env.BASE_URL}db.json`;
+  : `${import.meta.env.BASE_URL}/db.json`;
 export const saveHistory = async (quizName, entry) => {
   if (!quizName || quizName === "undefined") return null;
 

@@ -4,7 +4,7 @@ const isLocal =
 
 const BASE_URL = isLocal
   ? "http://localhost:5000/Details"
-  : `${import.meta.env.BASE_URL}db.json`;
+  : `${import.meta.env.BASE_URL}/db.json`;
 
 export async function getHistoryData() {
   try {
