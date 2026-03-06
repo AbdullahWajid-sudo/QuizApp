@@ -10,7 +10,10 @@
       (function () {
         var redirect = sessionStorage.redirect;
         delete sessionStorage.redirect;
-        if (redirect && redirect !== location.href) {
+        if (
+          redirect &&
+          redirect !== location.pathname + location.search + location.hash
+        ) {
           history.replaceState(null, null, redirect);
         }
       })();
@@ -25,6 +28,6 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="./src/main.jsx"></script>
   </body>
 </html>

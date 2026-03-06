@@ -8,7 +8,6 @@ const redirectPath = params.get("p");
 if (redirectPath) {
   window.history.replaceState(null, null, redirectPath);
 }
-
 createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <App />
