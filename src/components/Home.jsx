@@ -1,13 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate, Routes, Route } from "react-router-dom";
 import ResultView from "../views/ResultView";
 import QuizView from "../views/QuizView";
 import SelectQuiz from "./SelectQuiz";
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from "../firebase";
+import Login from "./Authentication/Login";
 
 function Home() {
+  const [user, setUser] = useState(null);
   const [name, setName] = useState("");
   const navigate = useNavigate();
 
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser); // If user exists, they are logged in!
+    });
+    return () => unsubscribe(); // Cleanup the listener
+  }, []);
   const handleSubmit = (event) => {
     event.preventDefault();
     if (!name.trim()) return alert("Please enter your name!");
@@ -21,6 +31,13 @@ function Home() {
           index
           element={
             <>
+              <div>
+                {user ? (
+                  <h1>Ready for the Quiz, {user.email}!</h1>
+                ) : (
+                  <h1>Please Log In</h1>
+                )}
+              </div>
               <main className="flex-1 flex flex-col items-center justify-center px-5 py-10">
                 <div className="w-full max-w-md">
                   <div className="text-center mb-8">
@@ -61,6 +78,7 @@ function Home() {
                           />
                         </div>
                       </div>
+                      <Login />
                       <button className="pill-button w-full h-14 flex items-center justify-center gap-3 bg-quiz-purple font-bold text-white text-base tracking-wide shadow-lg shadow-quiz-purple/20">
                         <span>START QUIZ</span>
                         <span className="material-symbols-outlined text-xl">
