@@ -5,11 +5,10 @@ export const saveHistory = async (quizName, entry) => {
   if (!quizName || quizName === "undefined") return null;
 
   try {
-    // Add a new document to the "history" collection
     const docRef = await addDoc(collection(db, "Details"), {
       ...entry,
-      quizName: quizName, // Keep track of which quiz this belongs to
-      timestamp: serverTimestamp(), // Best practice for sorting later
+      quizName: quizName,
+      timestamp: serverTimestamp(),
     });
 
     return docRef.id;
@@ -19,11 +18,9 @@ export const saveHistory = async (quizName, entry) => {
   }
 };
 
-// formatResultEntry stays mostly the same, but we remove the manual ID
 export const formatResultEntry = (data) => {
   const seconds = ("0" + Math.floor((data.finalTime / 1000) % 60)).slice(-2);
 
-  // We keep your date formatting as is for the UI string
   const formatter = new Intl.DateTimeFormat("en-US", {
     weekday: "short",
     month: "short",
@@ -36,7 +33,6 @@ export const formatResultEntry = (data) => {
   const formattedDate = formatter.format(new Date());
 
   return {
-    // Firebase generates its own unique ID, so we don't strictly need Date.now()
     userName: data.userName,
     score: `${data.finalScore}/${data.finalQuestions?.length || 0}`,
     timeTaken: `${seconds}sec`,
