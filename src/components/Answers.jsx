@@ -2,15 +2,20 @@ import React from "react";
 import DataTable from "../common/DataTable";
 
 function Answers(props) {
-  const tableData = props.que.map((question, index) => {
-    const uAns = props.ans[index] || "Not Answered";
+  const questions = props.que || [];
+  const answers = props.ans || [];
+
+  const tableData = questions.map((question, index) => {
+    const uAns = answers[index] || "Not Answered";
     const cAns = question.answer;
+
+    // Safely check for correctness
     const isCorrect = uAns?.toString().trim() === cAns?.toString().trim();
 
     return {
-      id: question.id,
-      questionText: question.question,
-      correctAnswer: cAns,
+      id: question.id || index, // Fallback to index if no ID
+      questionText: question.question || "No Question Text",
+      correctAnswer: cAns || "N/A",
       userAnswer: uAns,
       isCorrect: isCorrect,
       trInlineStyle: {

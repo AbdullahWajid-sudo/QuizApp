@@ -1,20 +1,19 @@
-const isLocal =
-  window.location.hostname === "localhost" ||
-  window.location.hostname === "127.0.0.1";
-
-const BASE_URL = isLocal
-  ? "http://localhost:5000/Details"
-  : `${import.meta.env.BASE_URL}/db.json`;
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../firebase";
 
 export async function getHistoryData() {
   try {
-    const response = await fetch(BASE_URL);
+    const historyCol = collection(db, "Details");
+    const querySnapshot = await getDocs(historyCol);
 
-    if (!response.ok) throw new Error("Failed to fetch");
+    // Map Firestore docs to a simple array
+    const historyData = querySnapshot.docs.map((doc) => ({
+      id: doc.title, // Use the unique Firestore ID
+      ...doc.data(), // Spread the fields (userName, score, title, etc.)
+    }));
 
-    const parsed = await response.json();
-
-    return isLocal ? parsed : parsed.Details || [];
+    // CRITICAL: Ensure we always return an array to avoid .filter() errors
+    return historyData || [];
   } catch (error) {
     console.error("Error fetching history:", error);
     return [];

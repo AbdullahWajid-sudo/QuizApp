@@ -1,8 +1,9 @@
-import { React, useState, useEffect } from "react";
+import { useState, useEffect } from "react"; // Removed unnecessary React import
 import { getHistoryData } from "../models/HistoryModel";
 
 export function useHistoryViewModel() {
-  const [history, setHistory] = useState({});
+  // 1. Initialize as an ARRAY now, not an object
+  const [history, setHistory] = useState([]);
   const [searchName, setSearchName] = useState("");
   const [startDate, setStartDate] = useState(new Date(2026, 0, 1));
   const [endDate, setEndDate] = useState(new Date());
@@ -15,16 +16,25 @@ export function useHistoryViewModel() {
   useEffect(() => {
     const loadData = async () => {
       const data = await getHistoryData();
-      setHistory(data);
+      // Ensure we always set an array
+      setHistory(Array.isArray(data) ? data : []);
     };
     loadData();
   }, []);
 
-  const quizTitles = Object.keys(history);
+  // 2. Get unique titles from the "title" or "quizName" field inside the documents
+  // This fixes the "0, 1, 2" button issue
+  const quizTitles = [
+    ...new Set(history.map((item) => item.title || item.quizName)),
+  ];
+
+  // 3. Simple filter logic for the selected subject
   const allData =
     selectedTitle === "All"
-      ? Object.values(history).flat()
-      : history[selectedTitle] || [];
+      ? history
+      : history.filter(
+          (item) => (item.title || item.quizName) === selectedTitle,
+        );
 
   const AnswerHandler = (item) => {
     setSelectedItem(item);
@@ -35,15 +45,23 @@ export function useHistoryViewModel() {
     setIsVisibleResult(!isVisibleResult);
   };
 
+  // 4. Final filtration for Search and Date
   const filteredData = allData.filter((item) => {
+    // Basic safety check to prevent "item.userName of undefined" crash
     if (!item || !item.userName) return false;
 
     const matchesName = item.userName
       .toLowerCase()
       .includes(searchName.toLowerCase());
-    const matchTime = new Date(item.id || item.date).getTime();
+
+    // Use the Firestore timestamp or the date string for the time comparison
+    const matchTime = item.timestamp?.seconds
+      ? item.timestamp.seconds * 1000
+      : new Date(item.date).getTime();
+
     const matchesDate =
       matchTime >= startDate.getTime() && matchTime <= endDate.getTime();
+
     return matchesName && matchesDate;
   });
 
@@ -57,7 +75,7 @@ export function useHistoryViewModel() {
       isVisibleResult,
       sortOrderUserName,
       sortOrderScore,
-      quizTitles,
+      quizTitles, // Now contains ["Python", "C++", etc.]
       filteredData,
     },
     actions: {

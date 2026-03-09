@@ -219,7 +219,7 @@ function HistoryView() {
               </div>
               <Answers
                 ans={state.selectedItem.answers}
-                que={state.selectedItem.question}
+                que={state.selectedItem.questions}
               />
             </div>
           )}
