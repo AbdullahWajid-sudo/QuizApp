@@ -2,7 +2,10 @@ import React from "react";
 import DataTable from "../common/DataTable";
 
 function Answers(props) {
-  const questions = props.que || [];
+  const questions = [...(props.que || [])].sort((a, b) => {
+    // If your questions have a 'no' or 'id', sort by that
+    return (b.no || 0) - (a.no || 0);
+  });
   const answers = props.ans || [];
 
   const tableData = questions.map((question, index) => {
@@ -18,9 +21,6 @@ function Answers(props) {
       correctAnswer: cAns || "N/A",
       userAnswer: uAns,
       isCorrect: isCorrect,
-      trInlineStyle: {
-        borderLeft: isCorrect ? "4px solid #34d399" : "4px solid #f87171",
-      },
     };
   });
 

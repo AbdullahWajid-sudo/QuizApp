@@ -1,17 +1,24 @@
-import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firebase";
+import { collection, query, orderBy, onSnapshot } from "firebase/firestore";
 
-export async function getHistoryData() {
-  try {
-    const historyCol = collection(db, "Details");
-    const querySnapshot = await getDocs(historyCol);
-    const historyData = querySnapshot.docs.map((doc) => ({
-      id: doc.title,
-      ...doc.data(),
-    }));
-    return historyData || [];
-  } catch (error) {
-    console.error("Error fetching history:", error);
-    return [];
-  }
+// REMOVE 'async' here. This must return the unsubscribe function immediately.
+export function getHistoryData(onUpdate) {
+  const q = query(collection(db, "Details"), orderBy("timestamp", "desc"));
+
+  const unsubscribe = onSnapshot(
+    q,
+    (snapshot) => {
+      const data = snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
+      onUpdate(data);
+    },
+    (error) => {
+      console.error("Firestore Error:", error);
+      onUpdate([]); // Send empty array on error to stop loading states
+    },
+  );
+
+  return unsubscribe; // This is the function React needs for cleanup
 }

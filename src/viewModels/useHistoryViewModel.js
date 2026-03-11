@@ -1,8 +1,7 @@
-import { useState, useEffect } from "react"; // Removed unnecessary React import
+import { useState, useEffect } from "react";
 import { getHistoryData } from "../models/HistoryModel";
 
 export function useHistoryViewModel() {
-  // 1. Initialize as an ARRAY now, not an object
   const [history, setHistory] = useState([]);
   const [searchName, setSearchName] = useState("");
   const [startDate, setStartDate] = useState(new Date(2026, 0, 1));
@@ -14,21 +13,15 @@ export function useHistoryViewModel() {
   const [sortOrderScore, setSortOrderScore] = useState();
 
   useEffect(() => {
-    const loadData = async () => {
-      const data = await getHistoryData();
-      // Ensure we always set an array
-      setHistory(Array.isArray(data) ? data : []);
-    };
-    loadData();
-  }, []);
+    const unsubscribe = getHistoryData((newData) =>
+      setHistory(Array.isArray(newData) ? newData : []),
+    );
 
-  // 2. Get unique titles from the "title" or "quizName" field inside the documents
-  // This fixes the "0, 1, 2" button issue
+    return unsubscribe;
+  }, []);
   const quizTitles = [
     ...new Set(history.map((item) => item.title || item.quizName)),
   ];
-
-  // 3. Simple filter logic for the selected subject
   const allData =
     selectedTitle === "All"
       ? history
@@ -44,17 +37,12 @@ export function useHistoryViewModel() {
     setSelectedItem(null);
     setIsVisibleResult(!isVisibleResult);
   };
-
-  // 4. Final filtration for Search and Date
   const filteredData = allData.filter((item) => {
-    // Basic safety check to prevent "item.userName of undefined" crash
     if (!item || !item.userName) return false;
 
     const matchesName = item.userName
       .toLowerCase()
       .includes(searchName.toLowerCase());
-
-    // Use the Firestore timestamp or the date string for the time comparison
     const matchTime = item.timestamp?.seconds
       ? item.timestamp.seconds * 1000
       : new Date(item.date).getTime();
@@ -75,7 +63,7 @@ export function useHistoryViewModel() {
       isVisibleResult,
       sortOrderUserName,
       sortOrderScore,
-      quizTitles, // Now contains ["Python", "C++", etc.]
+      quizTitles,
       filteredData,
     },
     actions: {
@@ -90,3 +78,4 @@ export function useHistoryViewModel() {
     },
   };
 }
+

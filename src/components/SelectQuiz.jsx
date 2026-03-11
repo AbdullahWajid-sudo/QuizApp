@@ -5,14 +5,14 @@ import QuizError from "./QuizError";
 
 function SelectQuiz() {
   const location = useLocation();
-  const { name } = location.state || {};
+  const { userName } = location.state || {};
   const navigate = useNavigate();
   const selectHandler = (quiz) => {
     navigate(`/Quiz/${quiz.id}`, {
       state: {
         questions: quiz.questions,
         title: quiz.topic,
-        name: name,
+        name: userName,
       },
     });
   };
