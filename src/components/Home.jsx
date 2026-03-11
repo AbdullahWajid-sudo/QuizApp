@@ -9,6 +9,7 @@ import Register from "./Authentication/Register";
 import ResultView from "../views/ResultView";
 import QuizView from "../views/QuizView";
 import SelectQuiz from "./SelectQuiz";
+import landingPageImg from "../../public/assets/images/Completed steps.gif";
 
 function Home() {
   const [user, setUser] = useState(null);
@@ -102,7 +103,7 @@ function Home() {
                               alt="Dashboard Preview"
                               className="w-full h-full object-cover opacity-90"
                               data-alt="Modern quiz dashboard interface showing progress metrics"
-                              src="/assets/images/Completed steps.gif"
+                              src={landingPageImg}
                             />
                           </div>
                         </div>
