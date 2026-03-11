@@ -178,10 +178,7 @@ function ResultView() {
               <span className="material-symbols-outlined">home</span>
               HOME
             </button>
-            {/* <button className="flex-1 py-4 bg-navy text-white font-bold rounded-xl shadow-lg active:scale-[0.98] transition-all flex items-center justify-center gap-2">
-              <span className="material-symbols-outlined">share</span>
-              SHARE
-            </button> */}
+        
           </div>
         </div>
       </div>
