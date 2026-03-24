@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #1e293b;
+  --color-border-gray: #e2e8f0;
+  --color-quiz-purple: #a855f7;
+  --color-ghost-white: #f8fafc;
+  --color-navy-deep: #0f172a;
+  --color-border-light: #e2e8f0;
+  --color-purple-brand: #a855f7;
+  --color-pink-accent: #ec4899;
+  --color-primary-purple: #a855f7;
+  --color-vibrant-purple: #a855f7;
+  --color-deep-navy: #1e293b;
+  --color-soft-pink: #ec4899;
+  --color-soft-green: #10b981;
+  --color-primary: #a855f7;
+  --color-secondary: #ec4899;
+  --color-background-light: #f6f6f8;
+  --color-background-dark: #13151f;
+  --color-primary-container: #eaddff;
+  --color-on-primary-container: #21005d;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f7f2fa;
+  --color-on-surface: #1d1b20;
+  --color-on-surface-variant: #49454f;
+  --color-outline: #79747e;
+  --color-outline-variant: #c9c4d0;
+  --color-error: #b3261e;
+  --color-error-container: #f9dedc;
+
+  --shadow-soft:
+    0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+}
+
+.main-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.05),
+    0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+.pill-button {
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+}
+.pill-button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 15px -3px rgba(168, 85, 247, 0.25);
+}
+
+.fill-icon {
+  font-variation-settings: "FILL" 1;
+}
+
+.progress-bar {
+  height: 6px;
+  background: #e2e8f0;
+  border-radius: 999px;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  background: #a855f7;
+  width: 45%;
+}
+.option-card {
+  @apply bg-white border border-border-light rounded-2xl p-5 transition-all cursor-pointer active:scale-[0.98] hover:border-primary-purple/50 flex items-center gap-4;
+}
+.option-card.selected {
+  @apply border-primary-purple border-2 bg-purple-50/30 ring-1 ring-primary-purple/10;
+}
+.bottom-nav-container {
+  @apply fixed bottom-0 left-0 right-0 bg-white border-t border-border-light p-4 pb-8 md:relative md:bg-transparent md:border-t-0 md:p-0 md:mt-8;
+}
+
+.stat-card {
+  @apply bg-white border border-slate-100 shadow-sm rounded-2xl p-6 text-center transition-all hover:shadow-md;
+}
+.review-card {
+  @apply bg-white border border-slate-100 rounded-2xl p-5 mb-4 shadow-sm;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+}
