@@ -67,7 +67,7 @@ const ManageScore = () => {
   const columns = [
     {
       header: "User Name",
-      key: "name",
+      key: "userName",
       sort: true,
       searchFilter: true,
       render: (row) => (
