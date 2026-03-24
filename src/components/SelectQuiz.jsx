@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { db } from "../firebase";
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs, query, where } from "firebase/firestore";
 import { useNavigate, useLocation, Routes, Route } from "react-router-dom";
 import QuizError from "./QuizError";
 
@@ -17,14 +17,15 @@ function SelectQuiz() {
   useEffect(() => {
     const fetchQuizzes = async () => {
       try {
-        const querySnapshot = await getDocs(collection(db, "quizzes"));
+        const q = query(collection(db, "quizzes"), where("active", "==", true));
+        const querySnapshot = await getDocs(q);
         const firebaseQuizzes = querySnapshot.docs.map((doc) => ({
           id: doc.id,
           ...doc.data(),
         }));
         setQuizzes(firebaseQuizzes);
       } catch (error) {
-        console.error("Error fetching quizzes:", error);
+        console.error("Error fetching active quizzes:", error);
       } finally {
         setLoading(false);
       }
