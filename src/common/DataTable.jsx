@@ -124,9 +124,6 @@ const DataTable = ({ columns, data }) => {
               {columns.map((col, index) => (
                 <th key={index} className="px-6 py-5 align-top">
                   <div className="flex flex-col gap-2">
-                    <span className="text-[12px] py-2 px-1 font-bold uppercase tracking-widest text-slate-400">
-                      {col.header}
-                    </span>
                     {col.searchFilter && (
                       <input
                         className="w-full px-3 py-2 text-sm bg-white text-slate-500  border border-slate-200 rounded-xl outline-none focus:ring-2 focus:ring-quiz-purple/20"
@@ -149,7 +146,8 @@ const DataTable = ({ columns, data }) => {
                           }
                           onChange={(e) =>
                             handleSortChange(col.key, e.target.value)
-                          }>
+                          }
+                        >
                           <option value="none">SORT</option>
                           <option value="asc">ASC</option>
                           <option value="desc">DESC</option>
@@ -160,7 +158,8 @@ const DataTable = ({ columns, data }) => {
                           className="appearance-none text-[13px] py-2 pl-3 pr-8 bg-white border border-slate-200 rounded-xl outline-none text-slate-500 
              bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20stroke%3D%22%236b7280%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%221.5%22%20d%3D%22m6%208%204%204%204-4%22%2F%3E%3C%2Fsvg%3E')] 
              bg-[length:1.25rem_1.25rem] bg-[right_0.5rem_center] bg-no-repeat"
-                          onChange={(e) => setSelectedFormat(e.target.value)}>
+                          onChange={(e) => setSelectedFormat(e.target.value)}
+                        >
                           {col.dateFormat.formats.map((f) => (
                             <option key={f} value={f}>
                               {f}
@@ -177,7 +176,8 @@ const DataTable = ({ columns, data }) => {
                             className="text-[9px] bg-slate-100 rounded px-1 py-0.5 outline-none"
                             onChange={(e) =>
                               handleDesignChange(col.key, prop, e.target.value)
-                            }>
+                            }
+                          >
                             {col.design[prop].map((opt) => (
                               <option key={opt} value={opt}>
                                 {prop}: {opt}
@@ -187,6 +187,9 @@ const DataTable = ({ columns, data }) => {
                         ))}
                       </div>
                     )}
+                    <span className="text-[12px] text-slate-600 py-2 px-1 font-bold uppercase tracking-widest text-slate-400">
+                      {col.header}
+                    </span>
                   </div>
                 </th>
               ))}
@@ -199,7 +202,8 @@ const DataTable = ({ columns, data }) => {
                   <td
                     key={cIdx}
                     className="px-6 py-4"
-                    style={getColumnStyle(col)}>
+                    style={getColumnStyle(col)}
+                  >
                     {col.render
                       ? col.render(item, rIdx)
                       : col.date
@@ -219,7 +223,8 @@ const DataTable = ({ columns, data }) => {
             {columns.map((col, cIdx) => (
               <div
                 key={cIdx}
-                className="flex justify-between items-start gap-4">
+                className="flex justify-between items-start gap-4"
+              >
                 <span className="text-[10px] font-black text-slate-400 uppercase tracking-tighter">
                   {col.header}
                 </span>
@@ -246,7 +251,8 @@ const DataTable = ({ columns, data }) => {
             onChange={(e) => {
               setItemsPerPage(Number(e.target.value));
               setCurrentPage(1);
-            }}>
+            }}
+          >
             {[5, 10, 20].map((v) => (
               <option key={v} value={v}>
                 {v} / page
@@ -258,12 +264,14 @@ const DataTable = ({ columns, data }) => {
             <button
               disabled={currentPage === 1}
               onClick={() => setCurrentPage((p) => p - 1)}
-              className="p-2 disabled:opacity-20 hover:bg-slate-50">
+              className="p-2 disabled:opacity-20 hover:bg-slate-50"
+            >
               <svg
                 className="w-5 h-5"
                 fill="none"
                 stroke="currentColor"
-                viewBox="0 0 24 24">
+                viewBox="0 0 24 24"
+              >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -278,12 +286,14 @@ const DataTable = ({ columns, data }) => {
             <button
               disabled={currentPage === totalPages}
               onClick={() => setCurrentPage((p) => p + 1)}
-              className="p-2 disabled:opacity-20 hover:bg-slate-50">
+              className="p-2 disabled:opacity-20 hover:bg-slate-50"
+            >
               <svg
                 className="w-5 h-5"
                 fill="none"
                 stroke="currentColor"
-                viewBox="0 0 24 24">
+                viewBox="0 0 24 24"
+              >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"

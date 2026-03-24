@@ -380,21 +380,6 @@ const EditQuiz = () => {
                       </div>
                       <div className="flex items-center">
                         <button
-                          onClick={(e) => handleToggleActive(e, quiz)}
-                          className={`p-2 rounded-full transition-colors z-10 relative ${
-                            quiz.active
-                              ? "text-emerald-500 hover:bg-emerald-50"
-                              : "text-slate-400 hover:bg-slate-100"
-                          }`}
-                          title={
-                            quiz.active ? "Deactivate Quiz" : "Activate Quiz"
-                          }
-                        >
-                          <span className="material-symbols-outlined text-3xl">
-                            {quiz.active ? "toggle_on" : "toggle_off"}
-                          </span>
-                        </button>
-                        <button
                           onClick={(e) => handleDeleteQuiz(e, quiz.id)}
                           className="p-2 text-slate-400 hover:text-red-500 hover:bg-red-50 rounded-full transition-colors z-10 relative"
                           title="Delete Quiz"
@@ -426,6 +411,24 @@ const EditQuiz = () => {
                           }`}
                         ></div>
                         <span>{quiz.active ? "Active" : "Inactive"}</span>
+                        <button
+                          onClick={(e) => handleToggleActive(e, quiz)}
+                          className={`p-1 rounded-full transition-colors z-10 relative ${
+                            quiz.active
+                              ? "text-emerald-500 hover:bg-emerald-50"
+                              : "text-slate-400 hover:bg-slate-100"
+                          }`}
+                          title={
+                            quiz.active ? "Deactivate Quiz" : "Activate Quiz"
+                          }
+                        >
+                          <span
+                            className="material-symbols-outlined text-3xl"
+                            style={{ fontSize: "40px" }}
+                          >
+                            {quiz.active ? "toggle_on" : "toggle_off"}
+                          </span>
+                        </button>
                       </div>
                     </div>
                   </div>
