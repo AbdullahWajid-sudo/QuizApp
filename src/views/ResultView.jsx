@@ -15,6 +15,7 @@ import { styles } from "../../public/assets/styles/QuizDocumentStyles";
 import goldbadge from "../../public/assets/images/gold-badge.png";
 // import silverbadge from "../../public/assets/images/silver-badge.png";
 import signature from "../../public/assets/images/signature.png";
+import { useEffect } from "react";
 
 const QuizDocument = ({ state }) => (
   <Document>
@@ -49,31 +50,33 @@ const QuizDocument = ({ state }) => (
 
 function ResultView() {
   const { state, actions } = useResultViewModel();
+  useEffect(() => {
+    console.log("Current State Attempt ID:", state.attemptId);
+  }, [state.attemptId]);  
 
   if (!state) {
     return <QuizError />;
   }
 
   const handleLinkedInShare = () => {
-    if (!state.attemptId) {
-      alert(
-        "Could not generate a shareable link. The result was not saved correctly.",
-      );
-      return;
-    }
+  // Check if attemptId is a real Firestore ID (not just 'true' or undefined)
+  if (!state.attemptId || state.attemptId === "true") {
+    alert("Please wait a moment for the certificate to generate...");
+    return;
+  }
 
-    // IMPORTANT: Replace 'your-quiz-app.web.app' with your actual deployed app's domain
-    const shareUrl = `https://abdullahwajid-sudo.github.io/QuizApp/#/verify/${state.attemptId}`;
-    const linkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
-      shareUrl,
-    )}`;
+  // 1. Fixed the double https:// from earlier
+  // 2. Used encodeURIComponent to ensure the # (hash) doesn't break the link
+  const verificationUrl = `https://abdullahwajid-sudo.github.io/QuizApp/#/verify/${state.attemptId}`;
+  
+  const linkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(verificationUrl)}`;
 
-    window.open(
-      linkedInUrl,
-      "_blank",
-      "width=600,height=600,noopener,noreferrer",
-    );
-  };
+  window.open(
+    linkedInUrl,
+    "_blank",
+    "width=600,height=600,noopener,noreferrer"
+  );
+};
 
   return (
     <div className="relative flex min-h-screen w-full flex-col bg-slate-50/50 overflow-x-hidden">

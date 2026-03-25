@@ -32,6 +32,7 @@ export const formatResultEntry = (data) => {
   const seconds = ("0" + Math.floor((data.finalTime / 1000) % 60)).slice(-2);
 
   return {
+    AttemptId: data.id,
     name: data.userName, // Changed to 'name' to match Admin Dashboard expectations
     // Correcting the score format: count/total instead of percentage/total
     score: `${data.correctAnswers || 0}/${data.totalQuestions || 0}`,
