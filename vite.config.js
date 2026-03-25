@@ -6,4 +6,10 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   base: "/QuizApp/",
   plugins: [react(), tailwindcss()],
+  define: {
+    // This provides a global 'global' and 'Buffer' to the browser
+    global: "window",
+    "process.env": {},
+    Buffer: ["buffer", "Buffer"],
+  },
 });
