@@ -3,8 +3,8 @@ import { useParams, Link } from "react-router-dom";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "../firebase";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import goldenbadge from "/assets/images/goldbadge.png";
-import silverbadge from "/assets/images/silverbadge.png";
+import goldenbadge from "../../public/assets/images/goldbadge.png";
+import silverbadge from "../../public/assets/images/silverbadge.png";
 
 const VerifyPage = () => {
   const { id } = useParams();
