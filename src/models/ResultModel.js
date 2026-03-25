@@ -13,7 +13,7 @@ export const saveHistory = async (quizName, entry) => {
 
   try {
     // Recommendation: Use lowercase "details" to match standard Firestore naming
-    const docRef = await addDoc(collection(db, "details"), {
+    const docRef = await addDoc(collection(db, "Details"), {
       ...entry,
       quizName: quizName,
       timestamp: serverTimestamp(),

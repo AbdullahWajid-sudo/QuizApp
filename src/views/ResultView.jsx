@@ -63,7 +63,7 @@ function ResultView() {
     }
 
     // IMPORTANT: Replace 'your-quiz-app.web.app' with your actual deployed app's domain
-    const shareUrl = `https://https://abdullahwajid-sudo.github.io/QuizApp/#/verify/${state.attemptId}`;
+    const shareUrl = `https://abdullahwajid-sudo.github.io/QuizApp/#/verify/${state.attemptId}`;
     const linkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
       shareUrl,
     )}`;
