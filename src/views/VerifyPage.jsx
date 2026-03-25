@@ -3,6 +3,8 @@ import { useParams, Link } from "react-router-dom";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "../firebase";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import goldenbadge from "../../public/assets/images/goldbadge.png";
+import silverbadge from "../../public/assets/images/silverbadge.png";
 
 const VerifyPage = () => {
   const { id } = useParams();
@@ -11,8 +13,8 @@ const VerifyPage = () => {
   const [error, setError] = useState(null);
 
   // Placeholder badge URLs - replace with your actual badge image URLs
-  const goldBadgeUrl = "/public/assets/images/gold-badge.png"; // For scores > 95%
-  const silverBadgeUrl = "https://i.imgur.com/b6a3kVA.png"; // For other scores
+  // const goldBadgeUrl = "/public/assets/images/gold-badge.png"; // For scores > 95%
+  // const silverBadgeUrl = "https://i.imgur.com/b6a3kVA.png"; // For other scores
 
   useEffect(() => {
     const fetchCertificate = async () => {
@@ -22,7 +24,7 @@ const VerifyPage = () => {
         return;
       }
       try {
-        const docRef = doc(db, "certificates", id);
+        const docRef = doc(db, "Details", id);
         const docSnap = await getDoc(docRef);
 
         if (docSnap.exists()) {
@@ -75,8 +77,7 @@ const VerifyPage = () => {
   }
 
   if (certificate) {
-    const imageUrl =
-      certificate.finalScore > 95 ? goldBadgeUrl : silverBadgeUrl;
+    const imageUrl = certificate.finalScore > 95 ? goldenbadge : silverbadge;
     const pageUrl = window.location.href;
     const title = `Certificate: ${certificate.userName} - ${certificate.QuizName}`;
     const description = `I scored ${certificate.finalScore}% on the ${certificate.QuizName} quiz. Check out my certificate!`;
