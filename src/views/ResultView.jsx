@@ -11,10 +11,10 @@ import {
 import QuizError from "../components/QuizError";
 import { useResultViewModel } from "../viewModels/useResultViewModel";
 import Answers from "../components/Answers";
-import { styles } from "../../public/assets/styles/QuizDocumentStyles";
-import goldbadge from "../../public/assets/images/gold-badge.png";
+import { styles } from "/assets/styles/QuizDocumentStyles";
+import goldbadge from "/assets/images/goldbadge.png";
 // import silverbadge from "../../public/assets/images/silver-badge.png";
-import signature from "../../public/assets/images/signature.png";
+import signature from "/assets/images/signature.png";
 import { useEffect } from "react";
 
 const QuizDocument = ({ state }) => (
@@ -52,31 +52,31 @@ function ResultView() {
   const { state, actions } = useResultViewModel();
   useEffect(() => {
     console.log("Current State Attempt ID:", state.attemptId);
-  }, [state.attemptId]);  
+  }, [state.attemptId]);
 
   if (!state) {
     return <QuizError />;
   }
 
   const handleLinkedInShare = () => {
-  // Check if attemptId is a real Firestore ID (not just 'true' or undefined)
-  if (!state.attemptId || state.attemptId === "true") {
-    alert("Please wait a moment for the certificate to generate...");
-    return;
-  }
+    // Check if attemptId is a real Firestore ID (not just 'true' or undefined)
+    if (!state.attemptId || state.attemptId === "true") {
+      alert("Please wait a moment for the certificate to generate...");
+      return;
+    }
 
-  // 1. Fixed the double https:// from earlier
-  // 2. Used encodeURIComponent to ensure the # (hash) doesn't break the link
-  const verificationUrl = `https://abdullahwajid-sudo.github.io/QuizApp/#/verify/${state.attemptId}`;
-  
-  const linkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(verificationUrl)}`;
+    // 1. Fixed the double https:// from earlier
+    // 2. Used encodeURIComponent to ensure the # (hash) doesn't break the link
+    const verificationUrl = `https://abdullahwajid-sudo.github.io/QuizApp/#/verify/${state.attemptId}`;
 
-  window.open(
-    linkedInUrl,
-    "_blank",
-    "width=600,height=600,noopener,noreferrer"
-  );
-};
+    const linkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(verificationUrl)}`;
+
+    window.open(
+      linkedInUrl,
+      "_blank",
+      "width=600,height=600,noopener,noreferrer",
+    );
+  };
 
   return (
     <div className="relative flex min-h-screen w-full flex-col bg-slate-50/50 overflow-x-hidden">
