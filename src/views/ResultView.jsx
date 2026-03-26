@@ -13,7 +13,6 @@ import { useResultViewModel } from "../viewModels/useResultViewModel";
 import Answers from "../components/Answers";
 import { styles } from "../../public/assets/styles/QuizDocumentStyles";
 import goldbadge from "../../public/assets/images/goldbadge.png";
-// import silverbadge from "../../public/assets/images/silver-badge.png";
 import signature from "../../public/assets/images/signature.png";
 import { useEffect } from "react";
 
@@ -52,31 +51,48 @@ function ResultView() {
   const { state, actions } = useResultViewModel();
   useEffect(() => {
     console.log("Current State Attempt ID:", state.attemptId);
-  }, [state.attemptId]);  
+  }, [state.attemptId]);
 
   if (!state) {
     return <QuizError />;
   }
 
+  const handleAddToLinkedInProfile = () => {
+    const baseUrl = "https://www.linkedin.com/profile/add";
+
+    const params = new URLSearchParams({
+      startTask: "CERTIFICATION_NAME",
+      name: `Certified: ${state.QuizName}`, // The Name of the Certificate
+      organizationName: "Your Brand Name", // e.g., "Sudo QuizApp"
+      issueYear: new Date().getFullYear(),
+      issueMonth: new Date().getMonth() + 1,
+      certUrl: `https://abdullahwajid-sudo.github.io/verify/${state.attemptId}`, // The Verification Link
+      certId: state.attemptId, // The Firestore Document ID as the License Number
+    });
+
+    const fullUrl = `${baseUrl}?${params.toString()}`;
+    window.open(fullUrl, "_blank");
+  };
+
   const handleLinkedInShare = () => {
-  // Check if attemptId is a real Firestore ID (not just 'true' or undefined)
-  if (!state.attemptId || state.attemptId === "true") {
-    alert("Please wait a moment for the certificate to generate...");
-    return;
-  }
+    // Check if attemptId is a real Firestore ID (not just 'true' or undefined)
+    if (!state.attemptId || state.attemptId === "true") {
+      alert("Please wait a moment for the certificate to generate...");
+      return;
+    }
 
-  // 1. Fixed the double https:// from earlier
-  // 2. Used encodeURIComponent to ensure the # (hash) doesn't break the link
-  const verificationUrl = `https://abdullahwajid-sudo.github.io/QuizApp/#/verify/${state.attemptId}`;
-  
-  const linkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(verificationUrl)}`;
+    // 1. Fixed the double https:// from earlier
+    // 2. Used encodeURIComponent to ensure the # (hash) doesn't break the link
+    const verificationUrl = `https://abdullahwajid-sudo.github.io/QuizApp/#/verify/${state.attemptId}`;
 
-  window.open(
-    linkedInUrl,
-    "_blank",
-    "width=600,height=600,noopener,noreferrer"
-  );
-};
+    const linkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(verificationUrl)}`;
+
+    window.open(
+      linkedInUrl,
+      "_blank",
+      "width=600,height=600,noopener,noreferrer",
+    );
+  };
 
   return (
     <div className="relative flex min-h-screen w-full flex-col bg-slate-50/50 overflow-x-hidden">
@@ -212,6 +228,21 @@ function ResultView() {
             >
               <span className="material-symbols-outlined">home</span>
               HOME
+            </button>
+            <button
+              onClick={handleAddToLinkedInProfile}
+              className="flex-1 py-4 bg-[#0077B5] text-white font-bold rounded-xl active:scale-95 transition-all flex items-center justify-center gap-2 shadow-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+              Badge
             </button>
             <button
               onClick={handleLinkedInShare}

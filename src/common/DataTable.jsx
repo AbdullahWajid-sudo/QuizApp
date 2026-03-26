@@ -6,6 +6,7 @@ const DataTable = ({ columns, data }) => {
   const [columnFilters, setColumnFilters] = useState({});
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(5);
+  const [globalSearch, setGlobalSearch] = useState("");
 
   const [selectedFormat, setSelectedFormat] = useState(() => {
     const dateCol = columns.find(
@@ -13,6 +14,10 @@ const DataTable = ({ columns, data }) => {
     );
     return dateCol ? dateCol.dateFormat.formats[0] : "none";
   });
+  const handleGlobalSearchChange = (value) => {
+    setGlobalSearch(value);
+    setCurrentPage(1);
+  };
 
   const handleFilterChange = (key, value) => {
     setColumnFilters((prev) => ({ ...prev, [key]: value }));
@@ -65,15 +70,38 @@ const DataTable = ({ columns, data }) => {
   };
 
   const filteredData = data.filter((item) => {
-    return Object.entries(columnFilters).every(([key, filterValue]) => {
-      if (!filterValue) return true;
-      const itemValue = item[key];
-      if (itemValue == null) return false;
-      return String(itemValue)
-        .toLowerCase()
-        .includes(filterValue.toLowerCase());
-    });
+    // 1. Check Global Search across all keys
+    const matchesGlobal =
+      globalSearch === "" ||
+      Object.values(item).some((val) =>
+        String(val).toLowerCase().includes(globalSearch.toLowerCase()),
+      );
+
+    // 2. Check individual column filters
+    const matchesColumnFilters = Object.entries(columnFilters).every(
+      ([key, filterValue]) => {
+        if (!filterValue) return true;
+        const itemValue = item[key];
+        if (itemValue == null) return false;
+        return String(itemValue)
+          .toLowerCase()
+          .includes(filterValue.toLowerCase());
+      },
+    );
+
+    return matchesGlobal && matchesColumnFilters;
   });
+
+  // const filteredData = data.filter((item) => {
+  //   return Object.entries(columnFilters).every(([key, filterValue]) => {
+  //     if (!filterValue) return true;
+  //     const itemValue = item[key];
+  //     if (itemValue == null) return false;
+  //     return String(itemValue)
+  //       .toLowerCase()
+  //       .includes(filterValue.toLowerCase());
+  //   });
+  // });
 
   const sortedData = [...filteredData].sort((a, b) => {
     if (sortConfig.length === 0) return (b.id || 0) - (a.id || 0);
@@ -120,6 +148,44 @@ const DataTable = ({ columns, data }) => {
       <div className="hidden md:block overflow-x-auto">
         <table className="w-full text-left border-collapse">
           <thead>
+            <tr>
+              <th
+                // colSpan={5}
+                colSpan={columns.length}
+                className="p-0 border-b border-slate-100 bg-slate-50/30"
+              >
+                <div className="flex items-center gap-4 w-full px-6 py-4">
+                  <div className="relative flex-1">
+                    <span className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                      <svg
+                        className="w-4 h-4 text-slate-400"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                        />
+                      </svg>
+                    </span>
+                    <input
+                      type="text"
+                      className="w-full pl-10 pr-4 py-2 text-sm bg-white border border-slate-200 rounded-2xl outline-none focus:ring-2 focus:ring-quiz-purple/20 transition-all"
+                      placeholder="Search all records..."
+                      value={globalSearch}
+                      onChange={(e) => handleGlobalSearchChange(e.target.value)}
+                    />
+                  </div>
+                  <div className="hidden sm:block text-xs font-bold text-slate-400 uppercase tracking-widest">
+                    Results: {filteredData.length}
+                  </div>
+                </div>
+              </th>
+            </tr>
+
             <tr className="bg-slate-50/80 border-b border-slate-100">
               {columns.map((col, index) => (
                 <th key={index} className="px-6 py-5 align-top">

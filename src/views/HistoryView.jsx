@@ -17,8 +17,8 @@ function HistoryView() {
     {
       header: "Student",
       key: "userName",
-      sort: true,
-      searchFilter: true,
+      // sort: true,
+      // searchFilter: true,
       render: (item) => (
         <div className="flex items-center gap-3">
           <span className="font-bold text-navy">{item.userName}</span>
@@ -35,7 +35,7 @@ function HistoryView() {
     {
       header: "Performance",
       key: "score",
-      sort: true,
+      // sort: true,
       render: (item) => (
         <div className="flex items-center gap-2">
           <span className="px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-600 font-bold text-xs border border-emerald-100">
@@ -57,18 +57,19 @@ function HistoryView() {
     {
       header: "Attempted On",
       key: "date",
-      date: true,
-      sort: true,
-      dateFormat: {
-        formats: ["MMM DD, yyyy", "DD/MM/yyyy", "ddd, MMM DD"],
-      },
+      // date: true,
+      // sort: true,
+      // dateFormat: {
+      //   formats: ["MMM DD, yyyy", "DD/MM/yyyy", "ddd, MMM DD"],
+      // },
     },
     {
       header: "Review",
       render: (item) => (
         <button
           className="flex items-center gap-1 px-4 py-2 bg-navy text-white hover:bg-quiz-purple rounded-xl font-bold text-[10px] tracking-widest transition-all shadow-sm active:scale-95"
-          onClick={() => actions.AnswerHandler(item)}>
+          onClick={() => actions.AnswerHandler(item)}
+        >
           DETAILS
         </button>
       ),
@@ -97,7 +98,8 @@ function HistoryView() {
             {state.selectedItem && (
               <button
                 onClick={() => actions.backHandler()}
-                className="flex items-center gap-2 px-5 py-2.5 bg-white border border-slate-200 text-navy font-bold rounded-2xl hover:bg-slate-50 transition-all shadow-sm group">
+                className="flex items-center gap-2 px-5 py-2.5 bg-white border border-slate-200 text-navy font-bold rounded-2xl hover:bg-slate-50 transition-all shadow-sm group"
+              >
                 <span className="material-symbols-outlined transition-transform group-hover:-translate-x-1">
                   arrow_back
                 </span>
@@ -114,7 +116,7 @@ function HistoryView() {
                     <label className="text-[11px] font-black text-slate-400 uppercase tracking-widest ml-1">
                       Live Search
                     </label>
-                    <div className="relative">
+                    {/* <div className="relative">
                       <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
                         search
                       </span>
@@ -125,9 +127,21 @@ function HistoryView() {
                         onChange={(e) => actions.setSearchName(e.target.value)}
                         placeholder="Student name..."
                       />
+                    </div> */}
+                    <div className="relative">
+                      <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
+                        search
+                      </span>
+                      <input
+                        className="w-full pl-12 pr-4 py-4 bg-slate-100 border-none rounded-2xl text-sm font-medium focus:ring-2 focus:ring-quiz-purple/20 transition-all outline-none text-slate-500"
+                        type="text"
+                        value={state.searchAll}
+                        onChange={(e) => actions.setSearchAll(e.target.value)}
+                        placeholder="Search anything..."
+                      />
                     </div>
                   </div>
-                  <div className="lg:col-span-4 space-y-2">
+                  {/* <div className="lg:col-span-4 space-y-2">
                     <label className="text-[11px] font-black text-slate-400 uppercase tracking-widest ml-1">
                       Date Range
                     </label>
@@ -158,7 +172,8 @@ function HistoryView() {
                           state.selectedTitle === "All"
                             ? "bg-quiz-purple text-white shadow-lg shadow-quiz-purple/20"
                             : "bg-slate-100 text-slate-500 hover:bg-slate-200"
-                        }`}>
+                        }`}
+                      >
                         All
                       </button>
                       {state.quizTitles.map((title) => (
@@ -169,12 +184,13 @@ function HistoryView() {
                             state.selectedTitle === title
                               ? "bg-quiz-purple text-white shadow-lg shadow-quiz-purple/20"
                               : "bg-slate-100 text-slate-500 hover:bg-slate-200"
-                          }`}>
+                          }`}
+                        >
                           {title}
                         </button>
                       ))}
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="bg-white rounded-[2rem] border border-slate-100 shadow-xl shadow-slate-200/50 overflow-hidden">
@@ -225,7 +241,6 @@ function HistoryView() {
           )}
         </div>
       </div>
-     
     </>
   );
 }

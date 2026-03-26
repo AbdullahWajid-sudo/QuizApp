@@ -1,21 +1,44 @@
-import { db } from "../../firebase"; // Double check this path matches your folder structure
+import { db } from "../firebase"; // Double check this path matches your folder structure
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
+// --- FORMATTING LOGIC ---
+export const formatResultEntry = (data) => {
+  const seconds = ("0" + Math.floor((data.finalTime / 1000) % 60)).slice(-2);
+
+  // This configuration matches your "Mon, Mar 09..." format exactly
+  const options = {
+    weekday: "short",
+    year: "numeric",
+    month: "short",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: true,
+  };
+
+  const formattedDate = new Date().toLocaleString("en-US", options);
+
+  return {
+    // 1. Match the database screenshot keys exactly:
+    userName: data.userName || "Anonymous",
+    quizName: data.QuizName || "General Quiz", // Use lowercase 'q' to match DB
+    title: data.QuizName || "General Quiz", // Adding 'title' as a fallback
+    score: `${data.correctAnswers || 0}/${data.totalQuestions || 0}`, // Format "9/10"
+    percentage: data.finalScore,
+    timeTaken: `${seconds}sec`, // Match 'timeTaken' from DB
+    date: formattedDate, // Full string for the DB display
+    // 2. Fix for "can't fetch user answer":
+    // Ensure these keys match what your History/Admin page calls
+    answers: data.userAnswers || [], // Match 'answers' in screenshot
+    questions: data.questions || [], // Match 'questions' in screenshot
+  };
+};
 
 // --- SAVE LOGIC ---
 export const saveHistory = async (quizName, entry) => {
-  // Debugging: Log to see if this function is even being called
-  console.log("Saving to Firestore...", { quizName, entry });
-
-  if (!quizName || quizName === "undefined") {
-    console.error("Save blocked: QuizName is undefined.");
-    return null;
-  }
-
   try {
-    // Recommendation: Use lowercase "details" to match standard Firestore naming
     const docRef = await addDoc(collection(db, "Details"), {
       ...entry,
-      quizName: quizName,
+      // Ensure the timestamp is a proper Firebase ServerTimestamp for sorting
       timestamp: serverTimestamp(),
     });
 
@@ -25,22 +48,4 @@ export const saveHistory = async (quizName, entry) => {
     console.error("Failed to save history to Firebase:", error);
     return null;
   }
-};
-
-// --- FORMATTING LOGIC ---
-export const formatResultEntry = (data) => {
-  const seconds = ("0" + Math.floor((data.finalTime / 1000) % 60)).slice(-2);
-
-  return {
-    AttemptId: data.id,
-    name: data.userName, // Changed to 'name' to match Admin Dashboard expectations
-    // Correcting the score format: count/total instead of percentage/total
-    score: `${data.correctAnswers || 0}/${data.totalQuestions || 0}`,
-    percentage: data.finalScore,
-    time: `${seconds}sec`,
-    date: new Date().toLocaleDateString(),
-    // Including raw data for the result table review
-    userAnswers: data.userAnswers || data.finalAnswers,
-    questions: data.questions || data.finalQuestions,
-  };
 };
