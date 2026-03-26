@@ -103,12 +103,12 @@ const Dashboard = () => {
     {
       header: "Quiz Name",
       key: "title",
-      // sort: true,
+      sort: true,
     },
     {
       header: "Plays",
       key: "plays",
-      // sort: true,
+      sort: true,
     },
     {
       header: "Status",

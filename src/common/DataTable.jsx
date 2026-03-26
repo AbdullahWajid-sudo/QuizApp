@@ -44,6 +44,17 @@ const DataTable = ({ columns, data }) => {
     }));
   };
 
+  const toggleSort = (key) => {
+    const current = sortConfig.find((s) => s.key === key);
+    if (!current) {
+      handleSortChange(key, "asc");
+    } else if (current.direction === "asc") {
+      handleSortChange(key, "desc");
+    } else {
+      handleSortChange(key, "none");
+    }
+  };
+
   const formatTableDate = (dateInput, formatStr) => {
     if (!dateInput || !formatStr || formatStr === "none") return dateInput;
     const date = new Date(dateInput);
@@ -91,17 +102,6 @@ const DataTable = ({ columns, data }) => {
 
     return matchesGlobal && matchesColumnFilters;
   });
-
-  // const filteredData = data.filter((item) => {
-  //   return Object.entries(columnFilters).every(([key, filterValue]) => {
-  //     if (!filterValue) return true;
-  //     const itemValue = item[key];
-  //     if (itemValue == null) return false;
-  //     return String(itemValue)
-  //       .toLowerCase()
-  //       .includes(filterValue.toLowerCase());
-  //   });
-  // });
 
   const sortedData = [...filteredData].sort((a, b) => {
     if (sortConfig.length === 0) return (b.id || 0) - (a.id || 0);
@@ -201,24 +201,6 @@ const DataTable = ({ columns, data }) => {
                       />
                     )}
                     <div className="flex flex-wrap gap-1.5">
-                      {col.sort && (
-                        <select
-                          className="appearance-none text-[13px] py-2 pl-3 pr-8 bg-white border border-slate-200 rounded-xl outline-none text-slate-500 
-             bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20stroke%3D%22%236b7280%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%221.5%22%20d%3D%22m6%208%204%204%204-4%22%2F%3E%3C%2Fsvg%3E')] 
-             bg-[length:1.25rem_1.25rem] bg-[right_0.5rem_center] bg-no-repeat"
-                          value={
-                            sortConfig.find((s) => s.key === col.key)
-                              ?.direction || "none"
-                          }
-                          onChange={(e) =>
-                            handleSortChange(col.key, e.target.value)
-                          }
-                        >
-                          <option value="none">SORT</option>
-                          <option value="asc">ASC</option>
-                          <option value="desc">DESC</option>
-                        </select>
-                      )}
                       {col.dateFormat && (
                         <select
                           className="appearance-none text-[13px] py-2 pl-3 pr-8 bg-white border border-slate-200 rounded-xl outline-none text-slate-500 
@@ -253,9 +235,51 @@ const DataTable = ({ columns, data }) => {
                         ))}
                       </div>
                     )}
-                    <span className="text-[12px] text-slate-600 py-2 px-1 font-bold uppercase tracking-widest text-slate-400">
-                      {col.header}
-                    </span>
+                    <div
+                      className="flex items-center gap-2 group cursor-pointer"
+                      onClick={() => col.sort && toggleSort(col.key)}
+                    >
+                      <span className="text-[12px] text-slate-600 py-2 px-1 font-bold uppercase tracking-widest text-slate-400">
+                        {col.header}
+                      </span>
+                      {col.sort && (
+                        <button
+                          onClick={() => toggleSort(col.key)}
+                          className={`flex items-center gap-1 px-3 py-2 text-[11px] font-bold rounded-xl border transition-all ${
+                            sortConfig.find((s) => s.key === col.key)
+                              ? "bg-quiz-purple/10 border-quiz-purple/30 text-quiz-purple"
+                              : "bg-white border-slate-200 text-slate-500 hover:border-slate-300"
+                          }`}
+                        >
+                          <div className="flex flex-col -space-y-1">
+                            <svg
+                              className={`w-2.5 h-2.5 ${
+                                sortConfig.find((s) => s.key === col.key)
+                                  ?.direction === "asc"
+                                  ? "text-quiz-purple"
+                                  : "text-slate-300"
+                              }`}
+                              fill="currentColor"
+                              viewBox="0 0 20 20"
+                            >
+                              <path d="M10 5l-5 5h10l-5-5z" />
+                            </svg>
+                            <svg
+                              className={`w-2.5 h-2.5 ${
+                                sortConfig.find((s) => s.key === col.key)
+                                  ?.direction === "desc"
+                                  ? "text-quiz-purple"
+                                  : "text-slate-300"
+                              }`}
+                              fill="currentColor"
+                              viewBox="0 0 20 20"
+                            >
+                              <path d="M10 15l5-5H5l5 5z" />
+                            </svg>
+                          </div>
+                        </button>
+                      )}
+                    </div>
                   </div>
                 </th>
               ))}

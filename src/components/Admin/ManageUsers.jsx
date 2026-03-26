@@ -90,7 +90,7 @@ const ManageUsers = () => {
     {
       header: "User",
       key: "displayName",
-      // sort: true,
+      sort: true,
       // searchFilter: true,
       render: (row) => (
         <div className="flex items-center gap-3 py-2">
@@ -109,13 +109,13 @@ const ManageUsers = () => {
     {
       header: "Email",
       key: "email",
-      // sort: true,
+      sort: true,
       // searchFilter: true,
     },
     {
       header: "Joined",
       key: "createdAt",
-      // sort: true,
+      sort: true,
       render: (row) =>
         row.createdAt?.seconds
           ? new Date(row.createdAt.seconds * 1000).toLocaleDateString()

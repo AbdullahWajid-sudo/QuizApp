@@ -68,7 +68,7 @@ const ManageScore = () => {
     {
       header: "User Name",
       key: "userName",
-      // sort: true,
+      sort: true,
       // searchFilter: true,
       render: (row) => (
         <span className="font-medium">
@@ -79,18 +79,18 @@ const ManageScore = () => {
     {
       header: "Quiz",
       key: "quizName",
-      // sort: true,
+      sort: true,
       // searchFilter: true,
     },
     {
       header: "Score",
       key: "score",
-      // sort: true,
+      sort: true,
     },
     {
       header: "Date",
       key: "timestamp",
-      // sort: true,
+      sort: true,
       render: (row) =>
         row.timestamp?.seconds
           ? new Date(row.timestamp.seconds * 1000).toLocaleString()

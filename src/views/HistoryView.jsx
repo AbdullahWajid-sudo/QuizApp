@@ -17,7 +17,7 @@ function HistoryView() {
     {
       header: "Student",
       key: "userName",
-      // sort: true,
+      sort: true,
       // searchFilter: true,
       render: (item) => (
         <div className="flex items-center gap-3">
@@ -35,7 +35,7 @@ function HistoryView() {
     {
       header: "Performance",
       key: "score",
-      // sort: true,
+      sort: true,
       render: (item) => (
         <div className="flex items-center gap-2">
           <span className="px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-600 font-bold text-xs border border-emerald-100">
@@ -58,7 +58,7 @@ function HistoryView() {
       header: "Attempted On",
       key: "date",
       // date: true,
-      // sort: true,
+      sort: true,
       // dateFormat: {
       //   formats: ["MMM DD, yyyy", "DD/MM/yyyy", "ddd, MMM DD"],
       // },
@@ -110,13 +110,13 @@ function HistoryView() {
 
           {state.isVisibleResult && !state.selectedItem && (
             <div className="space-y-8 animate-in fade-in duration-500">
-              <div className="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm">
+              {/* <div className="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
                   <div className="lg:col-span-4 space-y-2">
                     <label className="text-[11px] font-black text-slate-400 uppercase tracking-widest ml-1">
                       Live Search
                     </label>
-                    {/* <div className="relative">
+                    <div className="relative">
                       <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
                         search
                       </span>
@@ -127,7 +127,7 @@ function HistoryView() {
                         onChange={(e) => actions.setSearchName(e.target.value)}
                         placeholder="Student name..."
                       />
-                    </div> */}
+                    </div>
                     <div className="relative">
                       <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
                         search
@@ -141,7 +141,7 @@ function HistoryView() {
                       />
                     </div>
                   </div>
-                  {/* <div className="lg:col-span-4 space-y-2">
+                  <div className="lg:col-span-4 space-y-2">
                     <label className="text-[11px] font-black text-slate-400 uppercase tracking-widest ml-1">
                       Date Range
                     </label>
@@ -190,9 +190,9 @@ function HistoryView() {
                         </button>
                       ))}
                     </div>
-                  </div> */}
+                  </div>
                 </div>
-              </div>
+              </div> */}
               <div className="bg-white rounded-[2rem] border border-slate-100 shadow-xl shadow-slate-200/50 overflow-hidden">
                 <DataTable columns={tableColumns} data={state.filteredData} />
               </div>
